@@ -2,8 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\Author;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Avis extends Model
 {
@@ -11,4 +12,8 @@ class Avis extends Model
 
     protected $guarded = ['id'];
 
+    public function author()
+    {
+        return $this->belongsTo(Author::class);
+    }
 }

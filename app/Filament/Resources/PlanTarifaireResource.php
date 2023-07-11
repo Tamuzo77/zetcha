@@ -12,6 +12,7 @@ use Filament\Tables\Filters\Filter;
 use Filament\Tables\Actions\BulkAction;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
+use Filament\Forms\Components\TextInput\Mask;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\PlanTarifaireResource\Pages;
 use App\Filament\Resources\PlanTarifaireResource\RelationManagers;
@@ -37,7 +38,9 @@ class PlanTarifaireResource extends Resource
                 Forms\Components\TextInput::make('price')
                     ->label('Prix de plan')
                     ->integer()
-                    ->required(),
+                    ->required()
+                    ->mask(fn(Mask $mask) =>$mask
+                    ->money(prefix: 'Fr ', thousandsSeparator: ',', decimalPlaces: 2)),
                 Forms\Components\Toggle::make('is_active')
                     ->label('Activer')
             ]);

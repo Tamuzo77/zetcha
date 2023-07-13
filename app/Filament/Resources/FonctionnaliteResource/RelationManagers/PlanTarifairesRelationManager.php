@@ -1,18 +1,19 @@
 <?php
 
-namespace App\Filament\Resources\PlanTarifaireResource\RelationManagers;
+namespace App\Filament\Resources\FonctionnaliteResource\RelationManagers;
 
 use Filament\Forms;
-use Filament\Resources\Form;
-use Filament\Resources\RelationManagers\RelationManager;
-use Filament\Resources\Table;
 use Filament\Tables;
+use Filament\Resources\Form;
+use App\Models\PlanTarifaire;
+use Filament\Resources\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Filament\Resources\RelationManagers\RelationManager;
 
-class FonctionnalitiesRelationManager extends RelationManager
+class PlanTarifairesRelationManager extends RelationManager
 {
-    protected static string $relationship = 'fonctionnalites';
+    protected static string $relationship = 'planTarifaires';
 
     protected static ?string $recordTitleAttribute = 'name';
 
@@ -22,12 +23,7 @@ class FonctionnalitiesRelationManager extends RelationManager
             ->schema([
                 Forms\Components\TextInput::make('name')
                     ->required()
-                    ->label('Nom')
-                    ->maxLength(255)
-                    ->columnSpanFull(),
-                Forms\Components\RichEditor::make('description')
-                    ->label('Description')
-                    ->columnSpanFull(),
+                    ->maxLength(255),
             ]);
     }
 
@@ -41,16 +37,14 @@ class FonctionnalitiesRelationManager extends RelationManager
                 //
             ])
             ->headerActions([
-                Tables\Actions\CreateAction::make(),
                 Tables\Actions\AttachAction::make(),
             ])
             ->actions([
-                Tables\Actions\EditAction::make(),
-                Tables\Actions\DeleteAction::make(),
+                Tables\Actions\EditAction::make()
+                    ->url( fn(PlanTarifaire $record) : string => route('filament.resources.plan-tarifaires.edit', $record)),
                 Tables\Actions\DetachAction::make(),
             ])
             ->bulkActions([
-                Tables\Actions\DeleteBulkAction::make(),
                 Tables\Actions\DetachBulkAction::make(),
             ]);
     }    

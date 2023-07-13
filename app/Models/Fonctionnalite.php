@@ -12,9 +12,9 @@ class Fonctionnalite extends Model
 
     protected $guarded = ['id'];
 
-    public function planTarifaire()
+    public function planTarifaires()
     {
-        return $this->belongsTo(PlanTarifaire::class);
+        return $this->belongsToMany(PlanTarifaire::class);
     }
 
 }

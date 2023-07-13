@@ -12,8 +12,8 @@ class PlanTarifaire extends Model
 
     protected $guarded = ['id'];
 
-    public function fonctionnalities()
+    public function fonctionnalites()
     {
-        return $this->hasMany(Fonctionnalite::class);
+        return $this->belongsToMany(Fonctionnalite::class);
     }
 }

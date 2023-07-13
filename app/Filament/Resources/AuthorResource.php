@@ -27,6 +27,9 @@ class AuthorResource extends Resource
     protected static ?int  $navigationSort = 2;
 
     protected static ?string $title = 'Les Créateurs';
+
+    protected static ?string $recordTitleAttribute = 'name';
+
     public static function form(Form $form): Form
     {
         return $form

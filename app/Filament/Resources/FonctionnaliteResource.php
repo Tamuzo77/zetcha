@@ -20,7 +20,7 @@ class FonctionnaliteResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-collection';
     
-    protected static ?string $navigationLabel = 'Les Fonctionnalités';
+    protected static ?string $navigationLabel = 'Fonctionnalités';
 
     protected static ?string $navigationGroup = 'Cartes de Visites ZETCHA';
 

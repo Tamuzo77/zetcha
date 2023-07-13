@@ -26,7 +26,7 @@ class PlanTarifaireResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-currency-dollar';
     
-    protected static ?string $navigationLabel = 'Les Plans Tarifaires';
+    protected static ?string $navigationLabel = 'Plans Tarifaires';
 
     public static function form(Form $form): Form
     {

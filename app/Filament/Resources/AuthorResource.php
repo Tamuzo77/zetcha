@@ -22,7 +22,7 @@ class AuthorResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-user-group';
 
-    protected static ?string $navigationLabel = 'Les Créateurs';
+    protected static ?string $navigationLabel = 'Créateurs';
 
     protected static ?int  $navigationSort = 2;
 

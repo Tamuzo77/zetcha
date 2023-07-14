@@ -19,6 +19,7 @@ use App\Filament\Resources\CarteResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\CarteResource\RelationManagers;
 use App\Filament\Resources\CarteResource\RelationManagers\AuthorRelationManager;
+use App\Filament\Resources\CarteResource\RelationManagers\InfosProfessionnellesRelationManager;
 
 class CarteResource extends Resource
 {
@@ -149,6 +150,7 @@ class CarteResource extends Resource
     public static function getRelations(): array
     {
         return [
+            InfosProfessionnellesRelationManager::class,
         ];
     }
     

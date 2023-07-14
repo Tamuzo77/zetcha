@@ -14,6 +14,11 @@ class ListCartes extends ListRecords
     {
         return [
             Actions\CreateAction::make(),
+            Actions\Action::make('grid')
+                ->label('Grille')
+                ->icon('heroicon-o-view-grid')
+                ->color('success')
+                ->url('/admin/cartes/grid')
         ];
     }
 

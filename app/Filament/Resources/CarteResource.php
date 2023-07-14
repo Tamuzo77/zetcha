@@ -58,7 +58,6 @@ class CarteResource extends Resource
                             ->hintColor('danger')
                             ->prefix('ZTA')
                             ->numeric()
-                            ->unique()
                             ->disabled(),
                     ])->columnSpan(1)->columns(1),
                 Forms\Components\Fieldset::make('Auteur')
@@ -91,6 +90,9 @@ class CarteResource extends Resource
                             ->label('Nom de Famille')
                             ->required()
                             ->reactive()
+                            ->hintIcon('heroicon-o-shield-exclamation')
+                            ->hint("Toute modification actualisera les Codes-Z !")
+                            ->hintColor('danger')
                             ->afterStateUpdated(function(\Closure $set, $state){
                                 $set('numeroZ', mt_rand(1000000,9999999) );
                             })
@@ -127,6 +129,9 @@ class CarteResource extends Resource
                 SelectFilter::make('status')
                     ->label('Statut')
                     ->relationship('status', 'name'),
+                SelectFilter::make('planTarifaire')
+                    ->label('Plan Tarifaire')
+                    ->relationship('planTarifaire', 'name'),
                 Filter::make('created_at')
                     ->form([
                         DatePicker::make('from'),
@@ -161,6 +166,7 @@ class CarteResource extends Resource
             'create' => Pages\CreateCarte::route('/create'),
             'edit' => Pages\EditCarte::route('/{record}/edit'),
             'view' => Pages\ViewCarte::route('/{record}/view'),
+            'grid' => Pages\GridCarte::route('/grid'),
         ];
     }  
     

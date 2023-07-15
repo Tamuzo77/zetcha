@@ -36,10 +36,10 @@ class CartessChart extends ApexChartWidget
     {
         $data = Trend::model(Carte::class)
                     ->between(
-                        start: now()->subMonth()->endOfDay(),
+                        start: now()->subYear()->endOfDay(),
                         end: now(),
                     )
-                    ->perDay()
+                    ->perMonth()
                     ->count();
         return [
             'chart' => [
@@ -53,7 +53,7 @@ class CartessChart extends ApexChartWidget
                 ],
             ],
             'xaxis' => [
-                'categories' => $data->map(fn(TrendValue $value) =>gmdate("l ", strtotime($value->date) )),
+                'categories' => $data->map(fn(TrendValue $value) =>gmdate("M ", strtotime($value->date) )),
                 'labels' => [
                     'style' => [
                         'colors' => '#9ca3af',

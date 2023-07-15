@@ -18,7 +18,7 @@ class FonctionnaliteResource extends Resource
 {
     protected static ?string $model = Fonctionnalite::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-collection';
+    protected static ?string $navigationIcon = 'heroicon-o-gift';
     
     protected static ?string $navigationLabel = 'Fonctionnalités';
 
@@ -60,7 +60,7 @@ class FonctionnaliteResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
-                Tables\Actions\DeleteAction::make()
+                Tables\Actions\DeleteAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\DeleteBulkAction::make(),

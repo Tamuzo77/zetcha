@@ -40,7 +40,7 @@ class PlanTarifaireResource extends Resource
                     ->integer()
                     ->required()
                     ->mask(fn(Mask $mask) =>$mask
-                    ->money(prefix: 'Fr ', thousandsSeparator: ',', decimalPlaces: 2)),
+                    ->money(prefix: 'Fr ', thousandsSeparator: '.', decimalPlaces: 0)),
                 Forms\Components\Toggle::make('is_active')
                     ->label('Activer')
             ]);
@@ -51,9 +51,11 @@ class PlanTarifaireResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('name')
-                    ->sortable(),
+                    ->sortable()
+                    ->label('Nom'),
                 Tables\Columns\TextColumn::make('price')->money('xof')
-                    ->sortable(),
+                    ->sortable()
+                    ->label('Prix'),
                 Tables\Columns\BooleanColumn::make('is_active')
                     ->label('Actif'),              
             ])

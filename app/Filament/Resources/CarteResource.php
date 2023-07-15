@@ -126,9 +126,16 @@ class CarteResource extends Resource
                     ->wrap()
                     ->searchable(),
                 Tables\Columns\TextColumn::make('author.email')
-                ->label('Créateur')
-                ->searchable(),
+                    ->label('Créateur')
+                    ->searchable(),
                 //->url(),
+                Tables\Columns\BadgeColumn::make('status.name')
+                    ->colors([
+                        'secondary' => static fn($state):bool => $state == 'En Production',
+                        'danger' => static fn($state):bool => $state == 'Crée',
+                        'success' => static fn($state):bool => $state == 'Livrée',
+                    ])
+                    ->label('Statut')
                 
             ])
             ->filters([

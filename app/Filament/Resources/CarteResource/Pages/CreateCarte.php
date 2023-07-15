@@ -12,7 +12,8 @@ class CreateCarte extends CreateRecord
 
     protected function mutateFormDataBeforeCreate(array $data) : array
     {
-        $data['codeQR'] = env('APP_URL'). "/zetcha-cards". "/ZTA".$data['numeroZ']; 
+        $data['codeQR'] = env('APP_URL'). "/zetcha-cards". "/ZTA".$data['numeroZ'];
+        ($data['status_id'] == 3) ? $data['delivered_at'] = now() : $data['delivered_at'] = null;
         return $data;
     }
 }

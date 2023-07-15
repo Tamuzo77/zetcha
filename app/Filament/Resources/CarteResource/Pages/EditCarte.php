@@ -15,4 +15,11 @@ class EditCarte extends EditRecord
         return [
         ];
     }
+
+    protected function mutateFormDataBeforeSave(array $data) : array
+    {
+        ($data['status_id'] == 3) ? $data['delivered_at'] = now() : $data['delivered_at'] = null;
+        return $data;
+
+    }
 }

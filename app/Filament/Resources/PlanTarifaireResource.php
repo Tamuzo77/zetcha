@@ -53,14 +53,15 @@ class PlanTarifaireResource extends Resource
                 Tables\Columns\TextColumn::make('name')
                     ->sortable(),
                 Tables\Columns\TextColumn::make('price')->money('xof')
-                    ->sortable(),              
+                    ->sortable(),
+                Tables\Columns\BooleanColumn::make('is_active')
+                    ->label('Actif'),              
             ])
             ->filters([
                 Filter::make('is_active')
                     ->query(fn(Builder $query) : Builder => $query->where('is_active', true))
                     ->label('Actifs')
                     ->toggle()
-                    ->default()
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),

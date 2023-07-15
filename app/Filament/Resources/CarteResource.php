@@ -10,6 +10,7 @@ use Filament\Resources\Table;
 use Filament\Resources\Resource;
 use Filament\Tables\Actions\Action;
 use Filament\Tables\Filters\Filter;
+use Illuminate\Database\Eloquent\Model;
 use Filament\Forms\Components\DatePicker;
 use Filament\Tables\Columns\Layout\Split;
 use Filament\Tables\Columns\Layout\Stack;
@@ -173,5 +174,15 @@ class CarteResource extends Resource
     public static function canDeleteAny() : bool
     {
         return false;
+    }
+
+    public static function getGloballySearchableAttributes() : array
+    {
+        return ['numeroZ', 'first_name', 'last_name', 'author.name'];
+    }
+
+    public static function getGlobalSearchResultTitle(Model $record): string
+    {
+        return "$record->last_name, $record->first_name";
     }
 }

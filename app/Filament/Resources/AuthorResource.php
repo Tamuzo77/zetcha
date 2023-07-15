@@ -12,6 +12,7 @@ use Illuminate\Database\Eloquent\Builder;
 use App\Filament\Resources\AuthorResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\AuthorResource\RelationManagers;
+use App\Filament\Resources\AuthorResource\Widgets\AuthorOverview;
 use App\Filament\Resources\AuthorResource\RelationManagers\AvisRelationManager;
 
 class AuthorResource extends Resource
@@ -98,5 +99,11 @@ class AuthorResource extends Resource
         return ['name', 'email'];
     }
     
+    public static function getWidgets() : array
+    {
+        return [
+            
+        ];
+    }
     
 }

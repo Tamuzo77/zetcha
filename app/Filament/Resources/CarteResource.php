@@ -58,6 +58,9 @@ class CarteResource extends Resource
                             ->hint('Code-Z')
                             ->hintColor('danger')
                             ->prefix('ZTA')
+                            ->unique(
+                                ignorable: fn(null|Model $record): null|Model => $record,
+                            )
                             ->numeric()
                             ->disabled(),
                     ])->columnSpan(1)->columns(1),
@@ -65,6 +68,8 @@ class CarteResource extends Resource
                     ->schema([
                         Forms\Components\Select::make('author_id')
                             ->relationship('author', 'name')
+                            ->searchable()
+                            ->preload()
                             ->createOptionForm([
                                 Forms\Components\TextInput::make('name')
                                     ->label('Nom')

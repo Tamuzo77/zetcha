@@ -29,7 +29,7 @@ class GridCarte extends ListRecords
                 ->label('Liste')
                 ->icon('heroicon-o-view-list')
                 ->color('success')
-                ->url('/admin/cartes')
+                ->url(CarteResource::getUrl('index'))
         ];
     }
 

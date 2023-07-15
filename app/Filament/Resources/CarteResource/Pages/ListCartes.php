@@ -18,7 +18,7 @@ class ListCartes extends ListRecords
                 ->label('Grille')
                 ->icon('heroicon-o-view-grid')
                 ->color('success')
-                ->url('/admin/cartes/grid')
+                ->url(CarteResource::getUrl('grid'))
         ];
     }
 

@@ -18,3 +18,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::post('/updateCarte', [CarteController::class, 'requestToUpdate'])->name('updateCarte');
+Route::get('/test', function () {
+    return view('test/testCarte');
+});

@@ -2,9 +2,10 @@
 
 namespace App\Filament\Resources\CarteResource\Pages;
 
-use App\Filament\Resources\CarteResource;
 use Filament\Pages\Actions;
+use Filament\Pages\Actions\EditAction;
 use Filament\Resources\Pages\ViewRecord;
+use App\Filament\Resources\CarteResource;
 
 class ViewCarte extends ViewRecord
 {
@@ -14,7 +15,9 @@ class ViewCarte extends ViewRecord
 
     protected function getActions(): array
     {
-        return [];
+        return [
+            EditAction::make(),
+        ];
     }
 
     public function getForms(): array

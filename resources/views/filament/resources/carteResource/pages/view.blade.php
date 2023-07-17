@@ -10,7 +10,7 @@
     <h3 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-green-900">Code QR</h3>
 
     <div class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded">
-        {!! QrCode::gradient(0,0,75,0,0,100,'vertical')->size(200)->generate(\Request::url($record->codeQR)); !!} 
+        {!! QrCode::gradient(0,0,75,0,0,100,'vertical')->size(200)->generate($record->codeQR); !!} 
     </div>   
     <div class="w-full md:w-2/3 flex flex-col mb-16 items-center text-center">
       <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">{{ $record->last_name. ' '. $record->first_name }}</h1>

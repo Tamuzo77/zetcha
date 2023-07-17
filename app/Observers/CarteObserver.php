@@ -6,6 +6,8 @@ use App\Models\Carte;
 use App\Models\Author;
 use App\Mail\CarteCreated;
 use Illuminate\Support\Facades\Mail;
+use Filament\Notifications\Notification;
+use App\Jobs\SendEmailAfterCreatedCarteJob;
 
 class CarteObserver
 {
@@ -14,8 +16,15 @@ class CarteObserver
      */
     public function created(Carte $carte): void
     {
-        $author = Author::where('id', $carte->author_id)->get()->first();
-        Mail::to($author->email)->send(new CarteCreated($carte));
+        $dateOfCarteCreated = gmdate('l d M Y à H:i:s', $carte->created);
+        Notification::make()
+            ->title('Nouvelle carte crée')
+            ->success()
+            ->body("Numero Z : $carte->numeroZ ($dateOfCarteCreated)")
+            ->icon('heroicon-o-badge-check')
+            ->sendToDatabase(\App\Models\User::all())
+            ->send();
+        SendEmailAfterCreatedCarteJob::dispatch($carte)->delay(30);
     }
 
     /**

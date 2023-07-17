@@ -21,3 +21,5 @@ Route::post('/updateCarte', [CarteController::class, 'requestToUpdate'])->name('
 Route::get('/test', function () {
     return view('test/testCarte');
 });
+Route::post('/lostCarte', [CarteController::class, 'carteLost'])->name('carteLost');
+Route::middleware('auth')->get('/confirmationToRedoCarte/{carte}', [CarteController::class, 'confirmationToRedoCarte'] )->name('confirmationToRedoCarte');

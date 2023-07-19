@@ -38,11 +38,6 @@ class SendAdminNotificationLostCarteListener
             ->warning()
             ->icon('heroicon-o-identification')
             ->body("Carte de numero : $numeroZ est demandé pour une réimpression")
-            ->actions([
-                Action::make('Confirmer')
-                    ->color('success')
-                    ->url(route('confirmationToRedoCarte', $this->carte))
-            ])
             ->sendToDatabase(\App\Models\User::all(), true)
             ->send();
         SendEmailAfterConfirmationToCarteRequestJob::dispatch($this->carte, $this->author)->delay(10);

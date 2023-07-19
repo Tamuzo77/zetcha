@@ -5,7 +5,9 @@ namespace App\Providers;
 use App\Models\Carte;
 use Filament\Facades\Filament;
 use App\Observers\CarteObserver;
+use Filament\Navigation\UserMenuItem;
 use Illuminate\Support\ServiceProvider;
+use App\Filament\Resources\QuestionResource;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -26,6 +28,13 @@ class AppServiceProvider extends ServiceProvider
             Filament::registerNavigationGroups([
                 'Cartes de Visites ZETCHA',
                 'Autres'
+            ]);
+
+            Filament::registerUserMenuItems([
+                UserMenuItem::make()
+                    ->label('Questions')
+                    ->url(QuestionResource::getUrl('index'))
+                    ->icon('heroicon-s-question-mark-circle')
             ]);
         });
 

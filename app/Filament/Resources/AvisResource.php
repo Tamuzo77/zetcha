@@ -50,13 +50,14 @@ class AvisResource extends Resource
             ])
             ->filters([
                 TernaryFilter::make('deleted_at')
+                    ->label('Corbeille')
                     ->placeholder('Without trashed records')
                     ->trueLabel('With trashed records')
                     ->falseLabel('Only trashed records')
                     ->queries(
-                        true: fn (Builder $query) => $query->withTrashed(),
-                        false: fn (Builder $query) => $query->onlyTrashed(),
-                        blank: fn (Builder $query) => $query->withoutTrashed(),
+                        true: fn (Builder $query) => $query->withTrashed()->get(),
+                        false: fn (Builder $query) => $query->onlyTrashed()->get(),
+                        blank: fn (Builder $query) => $query->withoutTrashed()->get(),
                     )
             ])
             ->actions([

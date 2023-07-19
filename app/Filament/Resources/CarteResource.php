@@ -56,19 +56,11 @@ class CarteResource extends Resource
                             ->required(),
                             
                     ])->columnSpan(2),
-                Forms\Components\Fieldset::make('Zetcha Code Setting')
-                    ->schema([
-                        Forms\Components\TextInput::make('numeroZ')
-                            ->label('Z-Code-Number')
-                            ->hint('Code-Z')
-                            ->hintColor('danger')
-                            ->prefix('ZTA')
-                            ->unique(
-                                ignorable: fn(null|Model $record): null|Model => $record,
-                            )
-                            ->numeric()
-                            ->disabled(),
-                    ])->columnSpan(1)->columns(1),
+                Forms\Components\FileUpload::make('picture')
+                    ->label('Photo')
+                    ->image()
+                    ->avatar()
+                    ->enableOpen(),
                 Forms\Components\Fieldset::make('Auteur')
                     ->schema([
                         Forms\Components\Select::make('author_id')
@@ -94,6 +86,19 @@ class CarteResource extends Resource
                             ])
                             ->required(),
                     ])->columnSpan(2)->columns(1),
+                Forms\Components\Fieldset::make('Zetcha Code Setting')
+                    ->schema([
+                        Forms\Components\TextInput::make('numeroZ')
+                            ->label('Z-Code-Number')
+                            ->hint('Code-Z')
+                            ->hintColor('danger')
+                            ->prefix('ZTA')
+                            ->unique(
+                                ignorable: fn(null|Model $record): null|Model => $record,
+                            )
+                            ->numeric()
+                            ->disabled(),
+                    ])->columnSpan(1)->columns(1),
                 Forms\Components\Section::make('Section Principale')
                     ->description("Les champs suivants ne peuvent pas être changé lors de l'ajout de vos informations professionelles ou de la modification d'autres informations de la carte ")
                     ->schema([
@@ -111,7 +116,7 @@ class CarteResource extends Resource
                         Forms\Components\TextInput::make('first_name')
                             ->label('Prénom(s)')
                             ->required(),
-                    ])->columnSpan(2)
+                    ])->columnSpanFull()
             ])->columns(3);
     }
 

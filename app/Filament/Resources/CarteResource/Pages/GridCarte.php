@@ -3,6 +3,7 @@
 namespace App\Filament\Resources\CarteResource\Pages;
 
 use Filament\Tables;
+use App\Models\Carte;
 use Filament\Pages\Actions;
 use Filament\Resources\Table;
 use Filament\Tables\Filters\Filter;
@@ -10,6 +11,7 @@ use Illuminate\Contracts\View\View;
 use Filament\Tables\Columns\TagsColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\BadgeColumn;
+use Filament\Tables\Columns\ImageColumn;
 use App\Filament\Resources\CarteResource;
 use Filament\Forms\Components\DatePicker;
 use Filament\Resources\Pages\ListRecords;

@@ -43,6 +43,8 @@ class PlanTarifaireResource extends Resource
                     ->money(prefix: 'Fr ', thousandsSeparator: '.', decimalPlaces: 0)),
                 Forms\Components\Toggle::make('is_active')
                     ->label('Activer')
+                    ->onColor('success')
+                    ->onIcon('heroicon-s-lightning-bolt')
             ]);
     }
 

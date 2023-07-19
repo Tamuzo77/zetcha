@@ -18,8 +18,13 @@ class CarteController extends Controller
 {
     public function create(StoreCarteRequest $request)
     {
-        
         return \response()->json(200) ;
+    }
+
+    public function view(Carte $carte)
+    {
+        dd($carte);
+        return view();
     }
     public function requestToUpdate(EditCarteRequest $request)
     {

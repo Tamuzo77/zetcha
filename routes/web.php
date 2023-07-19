@@ -24,3 +24,4 @@ Route::get('/test', function () {
 Route::post('/lostCarte', [CarteController::class, 'carteLost'])->name('carteLost');
 Route::middleware('auth')->get('/confirmationToRedoCarte/{carte}', [CarteController::class, 'confirmationToRedoCarte'] )->name('confirmationToRedoCarte');
 Route::resource('cartes', CarteController::class);
+Route::get('/zetcha-cards/ZTA{carte:numeroZ}', [CarteController::class, 'view'])->name('view');

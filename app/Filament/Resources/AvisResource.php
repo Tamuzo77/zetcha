@@ -46,7 +46,7 @@ class AvisResource extends Resource
                     ->label('Avis'),
                 Tables\Columns\ImageColumn::make('author.avatar')
                     ->rounded()
-                    ->defaultImageUrl(fn(Avis $record) : string => 'https://ui-avatars.com/api/?name='.$record->author->name),
+                    ->defaultImageUrl(fn(Avis $record) : string => 'https://ui-avatars.com/api/?background=000&color=fff&?name='.$record->author->name),
             ])
             ->filters([
                 TernaryFilter::make('deleted_at')

@@ -11,10 +11,16 @@ use Illuminate\Support\Facades\Mail;
 use App\Mail\ConfirmationCarteToRedo;
 use App\Http\Requests\EditCarteRequest;
 use App\Http\Requests\LostCarteRequest;
+use App\Http\Requests\StoreCarteRequest;
 use App\Jobs\SendEmailAfterConfirmationToCarteRequestJob;
 
 class CarteController extends Controller
 {
+    public function create(StoreCarteRequest $request)
+    {
+        
+        return \response()->json(200) ;
+    }
     public function requestToUpdate(EditCarteRequest $request)
     {
             $carte = Carte::where('numeroZ', $request['numeroZ'])->get()->first();

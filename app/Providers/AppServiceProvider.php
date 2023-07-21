@@ -2,9 +2,11 @@
 
 namespace App\Providers;
 
+use App\Models\User;
 use App\Models\Carte;
 use Filament\Facades\Filament;
 use App\Observers\CarteObserver;
+use Illuminate\Support\Facades\Gate;
 use Filament\Navigation\UserMenuItem;
 use Illuminate\Support\ServiceProvider;
 use App\Filament\Resources\QuestionResource;
@@ -39,5 +41,6 @@ class AppServiceProvider extends ServiceProvider
         });
 
         Carte::observe(CarteObserver::class);
+        Gate::define('send_emails', fn(User $user) => true );
     }
 }

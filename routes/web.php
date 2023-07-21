@@ -22,6 +22,10 @@ Route::get('/test', function () {
     return view('test/testCarte');
 });
 Route::post('/lostCarte', [CarteController::class, 'carteLost'])->name('carteLost');
-Route::middleware('auth')->get('/confirmationToRedoCarte/{carte}', [CarteController::class, 'confirmationToRedoCarte'] )->name('confirmationToRedoCarte');
+Route::group([],function() {
+    Route::get('/confirmationToRedoCarte/{carte}', [CarteController::class, 'confirmationToRedoCarte'])->name('confirmationToRedoCarte');
+    Route::get('/sendEmailToUpdate/{carte:numeroZ}', [CarteController::class, 'sendEmailToUpdate'])->name('sendEmailToUpdate'); 
+});
 Route::resource('cartes', CarteController::class);
 Route::get('/zetcha-cards/ZTA{carte:numeroZ}', [CarteController::class, 'view'])->name('view');
+Route::get('/z-edit/{carte}', [CarteController::class, 'edit'])->name('z-edit');

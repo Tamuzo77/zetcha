@@ -40,6 +40,8 @@ class SendAdminNotificationCarteLinkToUpdateJob implements ShouldQueue
             ->actions([
                 Action::make('Envoyer le lien')
                     ->color('success')
+                    ->button()
+                    ->url(route('sendEmailToUpdate',$this->numeroZ ))
             ])
             ->sendToDatabase(\App\Models\User::all(), true)
             ->send();

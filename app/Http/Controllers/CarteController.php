@@ -12,6 +12,7 @@ use App\Mail\ConfirmationCarteToRedo;
 use App\Http\Requests\EditCarteRequest;
 use App\Http\Requests\LostCarteRequest;
 use App\Http\Requests\StoreCarteRequest;
+use App\Jobs\SendEmailToUserToUpdateJob;
 use App\Jobs\SendEmailAfterConfirmationToCarteRequestJob;
 
 class CarteController extends Controller
@@ -48,5 +49,21 @@ class CarteController extends Controller
     {
         $author = Author::where('id', $carte->author_id)->get()->first();
         SendEmailAfterConfirmationToCarteRequestJob::dispatch($carte, $author);
+    }
+
+    public function sendEmailToUpdate(Carte $carte)
+    {
+        SendEmailToUserToUpdateJob::dispatch($carte);
+        return \redirect()->back()->with('success', 'Lien Envoyé avec succes !');
+
+    }
+
+    public function edit(Carte $carte)
+    {
+        if(!\request()->hasValidSignature())
+        {
+            \abort(403, 'Lien expiré ou non valide');
+        }
+        dd($carte);
     }
 }

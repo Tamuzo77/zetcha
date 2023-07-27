@@ -29,7 +29,7 @@ class LinkToUpdate extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Carte ZETCHA : Lien de Modification',
+            subject: 'Carte ZETCHA : Modification',
         );
     }
 
@@ -42,7 +42,7 @@ class LinkToUpdate extends Mailable
             markdown: 'emails.linkToUpdate',
             with : [
                 'carte' => $this->carte,
-                'lien' => URL::temporarySignedRoute('z-edit', now()->addMinutes(1), ['carte' => $this->carte])
+                'lien' => URL::temporarySignedRoute('z-edit', now()->addMinutes(60), ['carte' => $this->carte])
             ]
         );
     }

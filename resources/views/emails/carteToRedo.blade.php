@@ -1,14 +1,13 @@
 <x-mail::message>
-# Introduction
+# Carte N° {{ $carte->numeroZ }}
 
 Votre demande de réimpression de la carte a été accepté 
 
-{{ $carte->first_name. ' '. $carte->last_name }}
-
-<x-mail::button :url="''">
-Button Text
-</x-mail::button>
-
-Thanks,<br>
+Nom & Prénoms : {{ $carte->first_name. ' '. $carte->last_name }}
+<p>
+    <strong>Numero Z:</strong> {{ $carte->numeroZ }}
+</p>
+Nous vous recontacterons bientôt !
+Merci,<br>
 {{ config('app.name') }}
 </x-mail::message>

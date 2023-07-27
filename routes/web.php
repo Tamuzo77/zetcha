@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CarteController;
+use App\Http\Controllers\IndexController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,9 @@ use App\Http\Controllers\CarteController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+// -------------------------frontend---------------------------------------
+Route::get( '/index', [IndexController::class, 'index']);
+//----------------------------------------------------------------
 
 Route::get('/', function () {
     return view('welcome');

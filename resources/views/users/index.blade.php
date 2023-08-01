@@ -221,7 +221,7 @@
                 aux informations professionnelles de la personne. </p>
         </div>
         <div class="text-white lg:flex place-items-center px-10 lg:px-24">
-            <div class="bg-blue-950 flex rounded-xl lg:w-1/2 p-20">
+            <div class="bg-blue-950 flex rounded-xl lg:w-1/2 p-10 sm:p-20">
                 <div class=" lg:w-3/6 w-auto">
                     <h1 class="text-2xl font-bold">QRCode & NFC</h1>
                     <p class="mt-8 mb-8">Plus besoin de saisir manuellement les données ou de s'encombrer de cartes papier. Découvrez le
@@ -233,10 +233,10 @@
                 </div>
             </div>
             <div class="lg:-translate-x-10 sm:flex place-items-center">
-                <div class=" z-10">
-                    <img class="h-96" src="image/Group 24.png" alt="">
+                <div class="sm:z-10">
+                    <img class="h-96 sm:m-0 m-auto" src="image/Group 24.png" alt="">
                 </div>
-                <div class="-translate-x-16">
+                <div class="sm:-translate-x-16">
                     <div class="bordure bg-blue-950 py-2 pe-10 ps-24 rounded-xl text-center my-7">Accéder aux Informations</div>
                     <div class="bordure bg-blue-950 py-2 pe-10 ps-24 rounded-xl text-center my-7">Interaction avec la Carte de Visite</div>
                     <div class="bordure bg-blue-950 py-2 pe-10 ps-24 rounded-xl text-center my-7">Enregistrer les Coordonnées</div>
@@ -244,6 +244,273 @@
             </div>
         </div>
     </section>
+    <section class="bg-blue-950  text-white mt-24 p-20 md:px-16 lg:px-28 text-center">
+        <div
+            class="w-80 h-80 bg-gradient-to-r from-blue-600 to-purple-600 absolute top-auto right-0 blur-3xl opacity-30 overflow-hidden rounded-full">
+        </div>
+        <div
+            class="w-80 h-80 bg-gradient-to-r from-blue-600 to-purple-600 absolute bottom-auto translate-y-96 left-0 blur-2xl opacity-30 overflow-hidden rounded-full">
+        </div>
+        <h1 class="title text-2xl mb-5 md:text-5xl capitalize">Gagnez en efficacité, brillez par votre professionnalisme</h1>
+        <p class="mb-14">Prenez part au changement positif et contribuez à la protection de l'environnement avec ZETCHA. Optimisez votre présence professionnelle avec ZETCHA dès aujourd'hui. Simplifiez votre réseau, gagnez en élégance et modernité, et profitez d'un échange professionnel fluide et sécurisé.</p>
+        <div class="md:mx-24">
+            <div class="mb-10">
+                <img class=" h-96 m-auto relative" src="image/iMac 27_ - Silver.png" alt="">
+            </div>
+            <div class="bordure bg-blue-950 py-2 mt-5 sm:mt-0 rounded-xl md:w-auto text-center px-10 sm:w-1/2 sm:absolute z-10 sm:-translate-y-96 sm:-translate-x-32 right-0">Une Solution Numérique, Un Impact Écologique Positif</div>
+            <div class="bordure bg-blue-950 py-2 mt-5 sm:mt-0 rounded-xl md:w-auto text-center px-10 sm:w-1/2 sm:absolute z-10 sm:-translate-y-64 sm:translate-x-28 left-0">Sécurité Avancée, Confiance Renforcée</div>
+            <div class="bordure bg-blue-950 py-2 mt-5 sm:mt-0 rounded-xl md:w-auto text-center px-10 sm:w-1/2 sm:absolute z-10 sm:-translate-y-32 sm:-translate-x-32 right-0">Assistance Premium, Support Réactif</div>
+        </div>
+    </section>
+    <section class="price mt-20 text-white mb-20">
+        <div class="w-1/2 m-auto">
+            <h1 class="title text-2xl mb-5 md:text-5xl text-center capitalize">Prêt à booster votre networking ? Rejoignez ZETCHA dès maintenant ! </h1>
+            <p class="text-center">Nous vous offrons des options de plans tarifaires adaptées à vos besoins pour vous permettre de créer, personnaliser et partager vos informations professionnelles en toute simplicité. </p>
+        </div>
+        <div class=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:mx-20 mx-10 md:mx-10 sm:mx-20  md:gap-x-10 gap-x-0 lg:gap-y-0 gap-y-10">
+            <div class="bg-blue-950 rounded-2xl p-10 space-y-10 shadow-lg shadow-blue-950 hover:scale-95 transition-all duration-200 bordure">
+                <h1 class="text-xl md:text-3xl title w-24">BASIC</h1>
+                <p class="opacity-95">Conçu pour ceux qui cherchent une solution simple et efficace pour leur carte</p>
+                <p class="text-3xl md:text-5xl">700 fcfa</p>
+                <button class="text-blue-950 bg-white w-full transition-all duration-100 hover:bordure hover:bg-inherit hover:text-white "><a href="">Lancez-vous</a></button>
+                <ul class=" space-y-5 opacity-95">
+                    <div class="flex items-center">
+                        <svg viewBox="0 0 32 32" fill="none" class="h-8 w-8 flex-none"><circle cx="16" cy="16" r="12" fill="blue"></circle><path d="M11.375 16.626a1 1 0 0 0-1.414 1.414l1.414-1.414Zm9.844-3.876a1 1 0 1 0-1.324-1.5l1.324 1.5Zm-6.754 8.38-.707.707a1 1 0 0 0 1.654-.385l-.947-.322Zm.947.322a20.359 20.359 0 0 1 5.807-8.702l-1.324-1.5a22.359 22.359 0 0 0-6.377 9.558l1.894.644ZM9.96 18.04l3.797 3.797 1.414-1.414-3.797-3.797-1.414 1.414Z" fill="white"></path></svg>
+                        <li class=" ms-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+                    </div>
+                    <div class="flex items-center">
+                        <svg viewBox="0 0 32 32" fill="none" class="h-8 w-8 flex-none"><circle cx="16" cy="16" r="12" fill="blue"></circle><path d="M11.375 16.626a1 1 0 0 0-1.414 1.414l1.414-1.414Zm9.844-3.876a1 1 0 1 0-1.324-1.5l1.324 1.5Zm-6.754 8.38-.707.707a1 1 0 0 0 1.654-.385l-.947-.322Zm.947.322a20.359 20.359 0 0 1 5.807-8.702l-1.324-1.5a22.359 22.359 0 0 0-6.377 9.558l1.894.644ZM9.96 18.04l3.797 3.797 1.414-1.414-3.797-3.797-1.414 1.414Z" fill="white"></path></svg>
+                        <li class=" ms-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+                    </div>
+                    <div class="flex items-center">
+                        <svg viewBox="0 0 32 32" fill="none" class="h-8 w-8 flex-none"><circle cx="16" cy="16" r="12" fill="blue"></circle><path d="M11.375 16.626a1 1 0 0 0-1.414 1.414l1.414-1.414Zm9.844-3.876a1 1 0 1 0-1.324-1.5l1.324 1.5Zm-6.754 8.38-.707.707a1 1 0 0 0 1.654-.385l-.947-.322Zm.947.322a20.359 20.359 0 0 1 5.807-8.702l-1.324-1.5a22.359 22.359 0 0 0-6.377 9.558l1.894.644ZM9.96 18.04l3.797 3.797 1.414-1.414-3.797-3.797-1.414 1.414Z" fill="white"></path></svg>
+                        <li class=" ms-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+                    </div>
+                  </ul>
+            </div>
+
+            <div class="bg-blue-950 rounded-2xl p-10 space-y-10 shadow-lg shadow-blue-950 hover:scale-95 transition-all duration-200 bordure">
+                    <h1 class="text-xl md:text-3xl title w-24">BASIC</h1>
+                    <p class="opacity-95">Conçu pour ceux qui cherchent une solution simple et efficace pour leur carte</p>
+                    <p class="text-3xl md:text-5xl">700 fcfa</p>
+                    <button class="text-blue-950 bg-white w-full transition-all duration-100 hover:bordure hover:bg-inherit hover:text-white "><a href="">Lancez-vous</a></button>
+                    <ul class=" space-y-5 opacity-95">
+                        <div class="flex items-center">
+                            <svg viewBox="0 0 32 32" fill="none" class="h-8 w-8 flex-none"><circle cx="16" cy="16" r="12" fill="blue"></circle><path d="M11.375 16.626a1 1 0 0 0-1.414 1.414l1.414-1.414Zm9.844-3.876a1 1 0 1 0-1.324-1.5l1.324 1.5Zm-6.754 8.38-.707.707a1 1 0 0 0 1.654-.385l-.947-.322Zm.947.322a20.359 20.359 0 0 1 5.807-8.702l-1.324-1.5a22.359 22.359 0 0 0-6.377 9.558l1.894.644ZM9.96 18.04l3.797 3.797 1.414-1.414-3.797-3.797-1.414 1.414Z" fill="white"></path></svg>
+                            <li class=" ms-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+                        </div>
+                        <div class="flex items-center">
+                            <svg viewBox="0 0 32 32" fill="none" class="h-8 w-8 flex-none"><circle cx="16" cy="16" r="12" fill="blue"></circle><path d="M11.375 16.626a1 1 0 0 0-1.414 1.414l1.414-1.414Zm9.844-3.876a1 1 0 1 0-1.324-1.5l1.324 1.5Zm-6.754 8.38-.707.707a1 1 0 0 0 1.654-.385l-.947-.322Zm.947.322a20.359 20.359 0 0 1 5.807-8.702l-1.324-1.5a22.359 22.359 0 0 0-6.377 9.558l1.894.644ZM9.96 18.04l3.797 3.797 1.414-1.414-3.797-3.797-1.414 1.414Z" fill="white"></path></svg>
+                            <li class=" ms-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+                        </div>
+                        <div class="flex items-center">
+                            <svg viewBox="0 0 32 32" fill="none" class="h-8 w-8 flex-none"><circle cx="16" cy="16" r="12" fill="blue"></circle><path d="M11.375 16.626a1 1 0 0 0-1.414 1.414l1.414-1.414Zm9.844-3.876a1 1 0 1 0-1.324-1.5l1.324 1.5Zm-6.754 8.38-.707.707a1 1 0 0 0 1.654-.385l-.947-.322Zm.947.322a20.359 20.359 0 0 1 5.807-8.702l-1.324-1.5a22.359 22.359 0 0 0-6.377 9.558l1.894.644ZM9.96 18.04l3.797 3.797 1.414-1.414-3.797-3.797-1.414 1.414Z" fill="white"></path></svg>
+                            <li class=" ms-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+                        </div>
+                      </ul>
+            </div>
+
+            <div class="bg-blue-950 rounded-2xl p-10 space-y-10 shadow-lg shadow-blue-950 hover:scale-95 transition-all duration-200 bordure">
+                    <h1 class="text-xl md:text-3xl title w-24">BASIC</h1>
+                    <p class="opacity-95">Conçu pour ceux qui cherchent une solution simple et efficace pour leur carte</p>
+                    <p class="text-3xl md:text-5xl">700 fcfa</p>
+                    <button class="text-blue-950 bg-white w-full hover:bordure hover:bg-inherit hover:text-white transition-all duration-100"><a href="">Lancez-vous</a></button>
+                    <ul class=" space-y-5 opacity-95">
+                        <div class="flex items-center">
+                            <svg viewBox="0 0 32 32" fill="none" class="h-8 w-8 flex-none"><circle cx="16" cy="16" r="12" fill="blue"></circle><path d="M11.375 16.626a1 1 0 0 0-1.414 1.414l1.414-1.414Zm9.844-3.876a1 1 0 1 0-1.324-1.5l1.324 1.5Zm-6.754 8.38-.707.707a1 1 0 0 0 1.654-.385l-.947-.322Zm.947.322a20.359 20.359 0 0 1 5.807-8.702l-1.324-1.5a22.359 22.359 0 0 0-6.377 9.558l1.894.644ZM9.96 18.04l3.797 3.797 1.414-1.414-3.797-3.797-1.414 1.414Z" fill="white"></path></svg>
+                            <li class=" ms-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+                        </div>
+                        <div class="flex items-center">
+                            <svg viewBox="0 0 32 32" fill="none" class="h-8 w-8 flex-none"><circle cx="16" cy="16" r="12" fill="blue"></circle><path d="M11.375 16.626a1 1 0 0 0-1.414 1.414l1.414-1.414Zm9.844-3.876a1 1 0 1 0-1.324-1.5l1.324 1.5Zm-6.754 8.38-.707.707a1 1 0 0 0 1.654-.385l-.947-.322Zm.947.322a20.359 20.359 0 0 1 5.807-8.702l-1.324-1.5a22.359 22.359 0 0 0-6.377 9.558l1.894.644ZM9.96 18.04l3.797 3.797 1.414-1.414-3.797-3.797-1.414 1.414Z" fill="white"></path></svg>
+                            <li class=" ms-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+                        </div>
+                        <div class="flex items-center">
+                            <svg viewBox="0 0 32 32" fill="none" class="h-8 w-8 flex-none"><circle cx="16" cy="16" r="12" fill="blue"></circle><path d="M11.375 16.626a1 1 0 0 0-1.414 1.414l1.414-1.414Zm9.844-3.876a1 1 0 1 0-1.324-1.5l1.324 1.5Zm-6.754 8.38-.707.707a1 1 0 0 0 1.654-.385l-.947-.322Zm.947.322a20.359 20.359 0 0 1 5.807-8.702l-1.324-1.5a22.359 22.359 0 0 0-6.377 9.558l1.894.644ZM9.96 18.04l3.797 3.797 1.414-1.414-3.797-3.797-1.414 1.414Z" fill="white"></path></svg>
+                            <li class=" ms-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+                        </div>
+                      </ul>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials processus bg-blue-950 text-white mt-24 p-20 md:px-16 lg:px-28 text-center md:text-start">
+        <div
+            class="w-80 h-80 bg-gradient-to-r from-blue-600 to-purple-600 absolute top-auto right-0 blur-3xl opacity-30 overflow-hidden rounded-full">
+        </div>
+        <h1 class="capitalize title text-2xl md:text-5xl text-center"> ce que la communauté en dit</h1>
+        <div class="testimonials-card grid grid-cols-3 mt-16 lg:gap-x-10 mx-20 max-h-[33rem] overflow-hidden">
+            <ul>
+                <div class="bordure rounded-xl mt-5">
+                    <div class="text-center p-5">
+                        <q >Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque perferendis, corporis pariatur magnam quas distinctio similique, quam temporibus non tempore neque aspernatur assumenda atque fuga delectus voluptatibus voluptates consequuntur nihil!</q>
+                    </div>
+                    <div class="flex items-center justify-between bg-blue-50 text-blue-950 p-3 rounded-b-xl">
+                        <div>
+                            <span href="" class="font-bold">bai AHOUISSOU</span>
+                            <p>Developpeur</p>
+                        </div>
+                        <img class=" h-18 w-18 rounded-lg " src="image/Image-60.png" alt="">
+                    </div>
+                </div>
+                <div class=" bordure rounded-xl mt-5">
+                    <div class="text-center p-5">
+                        <q >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto voluptates modi consectetur. Reprehenderit laborum consequatur corporis? Ut quod corporis, obcaecati tempora modi odio quia harum, aliquam natus cum veniam saepe.</q>
+                    </div>
+                    <div class="flex items-center justify-between bg-blue-50 text-blue-950 p-3 rounded-b-xl">
+                        <div>
+                            <span href="" class="font-bold">bai AHOUISSOU</span>
+                            <p>Developpeur</p>
+                        </div>
+                        <img class=" h-18 w-18 rounded-lg " src="image/Image-60.png" alt="">
+                    </div>
+                </div>
+                <div class=" bordure rounded-xl mt-5">
+                    <div class="text-center p-5">
+                        <q >fdsgsdgdg</q>
+                    </div>
+                    <div class="flex items-center justify-between bg-blue-50 text-blue-950 p-3 rounded-b-xl">
+                        <div>
+                            <span href="" class="font-bold">bai AHOUISSOU</span>
+                            <p>Developpeur</p>
+                        </div>
+                        <img class=" h-18 w-18 rounded-lg " src="image/Image-60.png" alt="">
+                    </div>
+                </div>
+                <div class=" bordure rounded-xl mt-5">
+                    <div class="text-center p-5">
+                        <q >fdsgsdgdg</q>
+                    </div>
+                    <div class="flex items-center justify-between bg-blue-50 text-blue-950 p-3 rounded-b-xl">
+                        <div>
+                            <span href="" class="font-bold">bai AHOUISSOU</span>
+                            <p>Developpeur</p>
+                        </div>
+                        <img class=" h-18 w-18 rounded-lg " src="image/Image-60.png" alt="">
+                    </div>
+                </div>
+            </ul>
+            <ul>
+                <div class="bordure rounded-xl mt-5">
+                    <div class="text-center p-5">
+                        <q >fdsgsdgdg</q>
+                    </div>
+                    <div class="flex items-center justify-between bg-blue-50 text-blue-950 p-3 rounded-b-xl">
+                        <div>
+                            <span href="" class="font-bold">bai AHOUISSOU</span>
+                            <p>Developpeur</p>
+                        </div>
+                        <img class=" h-18 w-18 rounded-lg " src="image/Image-60.png" alt="">
+                    </div>
+                </div>
+                <div class=" bordure rounded-xl mt-5">
+                    <div class="text-center p-5">
+                        <q >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto voluptates modi consectetur. Reprehenderit laborum consequatur corporis? Ut quod corporis, obcaecati tempora modi odio quia harum, aliquam natus cum veniam saepe.</q>
+                    </div>
+                    <div class="flex items-center justify-between bg-blue-50 text-blue-950 p-3 rounded-b-xl">
+                        <div>
+                            <span href="" class="font-bold">bai AHOUISSOU</span>
+                            <p>Developpeur</p>
+                        </div>
+                        <img class=" h-18 w-18 rounded-lg " src="image/Image-60.png" alt="">
+                    </div>
+                </div>
+                <div class=" bordure rounded-xl mt-5">
+                    <div class="text-center p-5">
+                        <q >fdsgsdgdg</q>
+                    </div>
+                    <div class="flex items-center justify-between bg-blue-50 text-blue-950 p-3 rounded-b-xl">
+                        <div>
+                            <span href="" class="font-bold">bai AHOUISSOU</span>
+                            <p>Developpeur</p>
+                        </div>
+                        <img class=" h-18 w-18 rounded-lg " src="image/Image-60.png" alt="">
+                    </div>
+                </div>
+                <div class=" bordure rounded-xl mt-5">
+                    <div class="text-center p-5">
+                        <q >fdsgsdgdg</q>
+                    </div>
+                    <div class="flex items-center justify-between bg-blue-50 text-blue-950 p-3 rounded-b-xl">
+                        <div>
+                            <span href="" class="font-bold">bai AHOUISSOU</span>
+                            <p>Developpeur</p>
+                        </div>
+                        <img class=" h-18 w-18 rounded-lg " src="image/Image-60.png" alt="">
+                    </div>
+                </div>
+            </ul>
+            <ul>
+                <div class="bordure rounded-xl mt-5">
+                    <div class="text-center p-5">
+                        <q >fdsgsdgdg</q>
+                    </div>
+                    <div class="flex items-center justify-between bg-blue-50 text-blue-950 p-3 rounded-b-xl">
+                        <div>
+                            <span href="" class="font-bold">bai AHOUISSOU</span>
+                            <p>Developpeur</p>
+                        </div>
+                        <img class=" h-18 w-18 rounded-lg " src="image/Image-60.png" alt="">
+                    </div>
+                </div>
+                <div class=" bordure rounded-xl mt-5">
+                    <div class="text-center p-5">
+                        <q >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto voluptates modi consectetur. Reprehenderit laborum consequatur corporis? Ut quod corporis, obcaecati tempora modi odio quia harum, aliquam natus cum veniam saepe.</q>
+                    </div>
+                    <div class="flex items-center justify-between bg-blue-50 text-blue-950 p-3 rounded-b-xl">
+                        <div>
+                            <span href="" class="font-bold">bai AHOUISSOU</span>
+                            <p>Developpeur</p>
+                        </div>
+                        <img class=" h-18 w-18 rounded-lg " src="image/Image-60.png" alt="">
+                    </div>
+                </div>
+                <div class=" bordure rounded-xl mt-5">
+                    <div class="text-center p-5">
+                        <q >fdsgsdgdg</q>
+                    </div>
+                    <div class="flex items-center justify-between bg-blue-50 text-blue-950 p-3 rounded-b-xl">
+                        <div>
+                            <span href="" class="font-bold">bai AHOUISSOU</span>
+                            <p>Developpeur</p>
+                        </div>
+                        <img class=" h-18 w-18 rounded-lg " src="image/Image-60.png" alt="">
+                    </div>
+                </div>
+                <div class=" bordure rounded-xl mt-5">
+                    <div class="text-center p-5">
+                        <q >fdsgsdgdg</q>
+                    </div>
+                    <div class="flex items-center justify-between bg-blue-50 text-blue-950 p-3 rounded-b-xl">
+                        <div>
+                            <span href="" class="font-bold">bai AHOUISSOU</span>
+                            <p>Developpeur</p>
+                        </div>
+                        <img class=" h-18 w-18 rounded-lg " src="image/Image-60.png" alt="">
+                    </div>
+                </div>
+            </ul>
+        </div>
+        <div class=" show inset-x-0 bottom-auto -translate-y-32 flex justify-center bg-gradient-to-t from-white pt-32 pb-8 pointer-events-none dark:from-slate-900 absolute"><button type="button" class="relative bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 text-sm text-white font-semibold h-12 px-6 rounded-lg flex items-center dark:bg-slate-700 dark:hover:bg-slate-600 pointer-events-auto">Show more...</button></div>
+    </section>
+    <footer class=" text-blue-950 mt-20 mb-24">
+        <div class="text-center m-auto w-1/2 mb-24">
+            <h1 class="title text-2xl md:text-5xl capitalize mb-10">Prêt à booster votre networking ? Rejoignez ZETCHA dès maintenant !</h1>
+            <p class="mb-10">Que vous soyez étudiant, professionnel en herbe ou expert confirmé, ZETCHA est là pour vous aider à vous connecter et à réussir dans votre domaine. Laissez votre carte de visite digitale parler pour vous !</p>
+            <button class="bg-blue-950 text-white p-3">Créer Votre Carte</button>
+        </div>
+            <div class="mb-10 mx-10 grid md:flex lg:text-xl text-lg place-items-center w-1/2 float-right py-10 md:py-0 md:space-y-0 md:space-x-12 text-center md:justify-between">
+                <a href=""
+                    class="hover:underline hover:scale-x-110 hover:opacity-95 transition-all ease-in-duration-200">Home</a>
+                <a href=""
+                    class="hover:underline hover:scale-x-110 hover:opacity-95 transition-all ease-in-duration-200">Pricing</a>
+                <a href=""
+                    class="hover:underline hover:scale-x-110 hover:opacity-95 transition-all ease-in-duration-200">How
+                    to use</a>
+                <a href=""
+                    class="hover:underline hover:scale-x-110 hover:opacity-95 transition-all ease-in-duration-200">About
+                    us</a>
+
+            </div>
+    </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         let hamburger = document.querySelector('#hamburger');
@@ -253,6 +520,14 @@
             menu.style.transition = 'all 2s';
 
         });
+        let show=document.querySelector(".show");
+        let card = document.querySelector(".testimonials-card")
+         show.addEventListener("click",()=>{
+            card.style.overflow="visible";
+            card.classList.toggle("max-h-[33rem]");
+            show.style.opacity="0";
+         })
+
         // hlink.forEach(link => {
         //     link.addEventListener("click",()=> {
         //         menu.classList.toggle('hidden');

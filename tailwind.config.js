@@ -12,7 +12,11 @@ export const theme = {
               default:'50px',
               md:"70px"
             }
-          }
+          },
+          listStyleImage: {
+            checkmark: 'url("/img/checkmark.png")',
+          },
+
     },
 };
 export const plugins = [];

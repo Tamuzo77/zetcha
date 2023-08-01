@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Artisan;
 use App\Http\Controllers\CarteController;
 use App\Http\Controllers\IndexController;
 
@@ -33,3 +34,38 @@ Route::group([],function() {
 Route::resource('cartes', CarteController::class);
 Route::get('/zetcha-cards/ZTA{carte:numeroZ}', [CarteController::class, 'view'])->name('view');
 Route::get('/z-edit/{carte}', [CarteController::class, 'edit'])->name('z-edit');
+
+Route::get('/ActiveStorage', function () {
+    Artisan::call('storage:link');
+    $resultat = Artisan::output();
+     $search = 'already';
+     $error = 'Lien symbolique existant, Bien vouloir vérifier le contenu !';
+  
+  
+    if(strpos($resultat, $search) === false) {
+        return redirect()->back()->with('success', $resultat);
+  
+    }else{
+       return redirect()->back()->with('error', $error);
+    }
+  
+  
+  })->name('active_storage');
+  
+  
+  // Purger tous les caches à une opération unique
+  Route::get('/ClearCache', function()  {
+    Artisan::call('optimize:clear');
+    $resultat = Artisan::output();
+    $search = 'successfully';
+    $error = 'Echec de nettoyage de caches';
+  
+  
+    if(strpos($resultat, $search) === false) {
+      return redirect()->back()->with('success', $resultat);
+      
+  }else{
+     return redirect()->back()->with('error', $error);
+  }
+  
+  })->name('vider_cache'); 

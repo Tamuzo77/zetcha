@@ -33,7 +33,7 @@
 
 <body class="text-xl sm:text-xl">
     <header class=" bg-blue-950 text-blue-100 font-bold h-auto pb-10 mb-16">
-        <nav class="flex justify-around pt-3 pb-3 items-center md:h-24 ">
+        <nav class="flex justify-around pt-3 pb-3 items-center md:h-24">
             <div class="z-50 md:z-0 md:w-1/5">
                 <a href=""><img class="h-16" src="image/zetcha-logo.png" alt=""></a>
             </div>
@@ -267,7 +267,7 @@
             <h1 class="title text-2xl mb-5 md:text-5xl text-center capitalize">Prêt à booster votre networking ? Rejoignez ZETCHA dès maintenant ! </h1>
             <p class="text-center">Nous vous offrons des options de plans tarifaires adaptées à vos besoins pour vous permettre de créer, personnaliser et partager vos informations professionnelles en toute simplicité. </p>
         </div>
-        <div class=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:mx-20 mx-10 md:mx-10 sm:mx-20  md:gap-x-10 gap-x-0 lg:gap-y-0 gap-y-10">
+        <div class=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:mx-20 mx-5 md:mx-10 sm:mx-20  md:gap-x-10 gap-x-0 lg:gap-y-0 gap-y-10">
             <div class="bg-blue-950 rounded-2xl p-10 space-y-10 shadow-lg shadow-blue-950 hover:scale-95 transition-all duration-200 bordure">
                 <h1 class="text-xl md:text-3xl title w-24">BASIC</h1>
                 <p class="opacity-95">Conçu pour ceux qui cherchent une solution simple et efficace pour leur carte</p>
@@ -332,12 +332,12 @@
             </div>
         </div>
     </section>
-    <section class="testimonials processus bg-blue-950 text-white mt-24 p-20 md:px-16 lg:px-28 text-center md:text-start">
+    <section class=" bg-blue-950 text-white testimonials mt-24 p-20 md:px-16 lg:px-28 text-center md:text-start">
         <div
             class="w-80 h-80 bg-gradient-to-r from-blue-600 to-purple-600 absolute top-auto right-0 blur-3xl opacity-30 overflow-hidden rounded-full">
         </div>
         <h1 class="capitalize title text-2xl md:text-5xl text-center"> ce que la communauté en dit</h1>
-        <div class="testimonials-card grid grid-cols-3 mt-16 lg:gap-x-10 mx-20 max-h-[33rem] overflow-hidden">
+        <div class="testimonials-card grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-16 gap-x-5 lg:gap-x-10 sm:mx-10 lg:mx-20 max-h-[33rem] overflow-hidden">
             <ul>
                 <div class="bordure rounded-xl mt-5">
                     <div class="text-center p-5">
@@ -491,13 +491,13 @@
         </div>
         <div class=" show inset-x-0 bottom-auto -translate-y-32 flex justify-center bg-gradient-to-t from-white pt-32 pb-8 pointer-events-none dark:from-slate-900 absolute"><button type="button" class="relative bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 text-sm text-white font-semibold h-12 px-6 rounded-lg flex items-center dark:bg-slate-700 dark:hover:bg-slate-600 pointer-events-auto">Show more...</button></div>
     </section>
-    <footer class=" text-blue-950 mt-20 mb-24">
+    <footer class=" text-blue-950 mt-20">
         <div class="text-center m-auto w-1/2 mb-24">
             <h1 class="title text-2xl md:text-5xl capitalize mb-10">Prêt à booster votre networking ? Rejoignez ZETCHA dès maintenant !</h1>
             <p class="mb-10">Que vous soyez étudiant, professionnel en herbe ou expert confirmé, ZETCHA est là pour vous aider à vous connecter et à réussir dans votre domaine. Laissez votre carte de visite digitale parler pour vous !</p>
             <button class="bg-blue-950 text-white p-3">Créer Votre Carte</button>
         </div>
-            <div class="mb-10 mx-10 grid md:flex lg:text-xl text-lg place-items-center w-1/2 float-right py-10 md:py-0 md:space-y-0 md:space-x-12 text-center md:justify-between">
+            <div class="mb-10 sm:px-20 flex lg:text-xl text-lg place-items-center lg:w-1/2 lg:float-right py-10 md:py-0 md:space-y-0 text-center justify-around">
                 <a href=""
                     class="hover:underline hover:scale-x-110 hover:opacity-95 transition-all ease-in-duration-200">Home</a>
                 <a href=""

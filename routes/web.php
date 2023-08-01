@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CarteController;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\PricingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,7 @@ use App\Http\Controllers\IndexController;
 */
 // -------------------------frontend---------------------------------------
 Route::get( '/index', [IndexController::class, 'index']);
+Route::get( '/pricing', [PricingController::class,'pricing']);
 //----------------------------------------------------------------
 
 Route::get('/', function () {
@@ -28,7 +30,7 @@ Route::get('/test', function () {
 Route::post('/lostCarte', [CarteController::class, 'carteLost'])->name('carteLost');
 Route::group([],function() {
     Route::get('/confirmationToRedoCarte/{carte}', [CarteController::class, 'confirmationToRedoCarte'])->name('confirmationToRedoCarte');
-    Route::get('/sendEmailToUpdate/{carte:numeroZ}', [CarteController::class, 'sendEmailToUpdate'])->name('sendEmailToUpdate'); 
+    Route::get('/sendEmailToUpdate/{carte:numeroZ}', [CarteController::class, 'sendEmailToUpdate'])->name('sendEmailToUpdate');
 });
 Route::resource('cartes', CarteController::class);
 Route::get('/zetcha-cards/ZTA{carte:numeroZ}', [CarteController::class, 'view'])->name('view');

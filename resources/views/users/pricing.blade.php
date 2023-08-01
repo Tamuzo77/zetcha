@@ -501,13 +501,13 @@
                     <div class="mx-auto max-w-6xl">
                         <div class="p-2 rounded">
                             <div class="flex flex-col md:flex-row">
-                                <div class="md:w-1/3 p-4 text-sm">
+                                <div class="md:w-1/3 p-4">
 
                                     <div class="sticky inset-x-0 top-0 left-0 py-12">
 
-                                        <div class="text-3xl text-violet-400 mb-8">Frequently asked questions.</div>
-                                        <div class="mb-2">Lorem Ipsum ?</div>
-                                        <div class="text-xs text-white ">See our FAQ for more details</div>
+                                        <div class="text-2xl font-bold md:text-4xl text-violet-400 mb-8">Frequently asked questions.</div>
+                                        <div class="mb-2 text-xl">Lorem Ipsum ?</div>
+                                        <div class="text-lg text-white ">See our FAQ for more details</div>
                                     </div>
                                 </div>
                                 <div class="md:w-2/3 py-12 ">

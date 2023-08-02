@@ -22,7 +22,7 @@ Route::get( '/pricing', [PricingController::class,'pricing']);
 //----------------------------------------------------------------
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 Route::post('/updateCarte', [CarteController::class, 'requestToUpdate'])->name('updateCarte');
 Route::get('/test', function () {

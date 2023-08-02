@@ -18,12 +18,15 @@ use App\Http\Controllers\PricingController;
 */
 // -------------------------frontend---------------------------------------
 Route::get( '/index', [IndexController::class, 'index']);
-Route::get( '/pricing', [PricingController::class,'pricing']);
+Route::get( '/pricingtest', [PricingController::class,'pricing']);
 //----------------------------------------------------------------
 
 Route::get('/', function () {
     return view('index');
 });
+Route::get('/pricing', function () {
+    return view('pricing');
+})->name('pricing');
 Route::post('/updateCarte', [CarteController::class, 'requestToUpdate'])->name('updateCarte');
 Route::get('/test', function () {
     return view('test/testCarte');

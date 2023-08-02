@@ -3,6 +3,6 @@
 <x-processus />
 <x-utility/>
 <x-efficacity />
-<livewire:pricing />
+<x-pricing />
 <livewire:avis />
 </x-layout>

@@ -11,9 +11,9 @@
         class=" menu absolute md:relative inset-0 md:block hidden z-40 bg-blue-950 md:bg-inherit py-24 transition-all duration-200">
         <div
             class="grid md:flex lg:text-xl text-lg place-items-center  py-10 md:py-0 md:space-y-0 md:space-x-12 text-center md:justify-between">
-            <a href=""
+            <a href="/"
                 class="hover:underline hover:scale-x-110 hover:text-white transition-all ease-in-duration-200">Home</a>
-            <a href=""
+            <a href="{{ route('pricing') }}"
                 class="hover:underline hover:scale-x-110 hover:text-white transition-all ease-in-duration-200">Pricing</a>
             <a href=""
                 class="hover:underline hover:scale-x-110 hover:text-white transition-all ease-in-duration-200">How

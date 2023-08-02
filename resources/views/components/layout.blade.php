@@ -40,7 +40,7 @@
         @if (request()->is('/'))
             @include('partials._hero')
         @endif
-
+        {{ $header ?? ' ' }}
     </header>
     {{ $slot }}
 @include('partials._footer')

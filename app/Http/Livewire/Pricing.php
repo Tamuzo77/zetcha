@@ -11,7 +11,7 @@ class Pricing extends Component
 
     public function mount()
     {
-        $this->pricings = PlanTarifaire::all();
+        $this->pricings = PlanTarifaire::where('is_active', true)->get();
     }
     public function render()
     {

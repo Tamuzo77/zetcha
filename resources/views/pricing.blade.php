@@ -1,4 +1,4 @@
-<x-layout title="Pricing">
+<x-layout title="">
     <x-slot name="header">
         <section class="hero mt-24  text-center md:text-start px-16 items-center justify-between">
             <div
@@ -22,7 +22,9 @@
                 <img class="" src="{{ asset('image/zetcha-logo.png') }}" alt="">
             </div>
         </section>
+        <livewire:features />
 
         <livewire:avis />
+        <livewire:faq-list />
     </x-slot>
 </x-layout>

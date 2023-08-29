@@ -21,15 +21,22 @@ use App\Http\Controllers\InscriptionController;
 */
 // -------------------------frontend---------------------------------------
 Route::get( '/index', [IndexController::class, 'index']);
+<<<<<<< HEAD
 Route::get( '/pricing', [PricingController::class,'pricing']);
 Route::get( '/inscription', [InscriptionController::class,'inscription']);
 Route::get( '/page', [PageController::class,'page']);
 Route::get( '/about', [AboutController::class,'about']);
+=======
+Route::get( '/pricingtest', [PricingController::class,'pricing']);
+>>>>>>> 708042e00009fada2f901de6e7420dfc1c70d3b6
 //----------------------------------------------------------------
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+Route::get('/pricing', function () {
+    return view('pricing');
+})->name('pricing');
 Route::post('/updateCarte', [CarteController::class, 'requestToUpdate'])->name('updateCarte');
 Route::get('/test', function () {
     return view('test/testCarte');

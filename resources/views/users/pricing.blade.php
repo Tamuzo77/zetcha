@@ -15,7 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
         integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
     <title>Document</title>
 </head>
 
@@ -492,7 +492,8 @@
                 class=" show inset-x-0 bottom-auto -translate-y-32 flex justify-center bg-gradient-to-t from-white pt-32 pb-8 pointer-events-none dark:from-slate-900 absolute">
                 <button type="button"
                     class="relative bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 text-sm text-white font-semibold h-12 px-6 rounded-lg flex items-center dark:bg-slate-700 dark:hover:bg-slate-600 pointer-events-auto">Show
-                    more...</button></div>
+                    more...</button>
+            </div>
         </section>
         <section class="faqs">
             <article id="the-article">
@@ -505,7 +506,8 @@
 
                                     <div class="sticky inset-x-0 top-0 left-0 py-12">
 
-                                        <div class="text-2xl font-bold md:text-4xl text-violet-400 mb-8">Frequently asked questions.</div>
+                                        <div class="text-2xl font-bold md:text-4xl text-violet-400 mb-8">Frequently
+                                            asked questions.</div>
                                         <div class="mb-2 text-xl">Lorem Ipsum ?</div>
                                         <div class="text-lg text-white ">See our FAQ for more details</div>
                                     </div>
@@ -516,79 +518,8 @@
                                         <div class="item px-6 py-6" x-data="{ isOpen: false }">
                                             <a href="#" class="flex items-center justify-between"
                                                 @click.prevent="isOpen = true">
-                                                <h4 :class="{ 'text-violet-400 font-medium': isOpen == true }">Lorem Ipsum
-                                                    ?</h4>
-                                                <svg :class="{ 'transform rotate-180': isOpen == true }"
-                                                    class="w-5 h-5 text-gray-500" fill="none"
-                                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    viewBox="0 0 24 24" stroke="currentColor">
-                                                    <path d="M19 9l-7 7-7-7"></path>
-                                                </svg>
-                                            </a>
-                                            <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
-                                                :class="{ 'text-white ': isOpen == true }">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                                    culpa qui officia deserunt mollit anim id est laborum.</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="item px-6 py-6" x-data="{ isOpen: false }">
-                                            <a href="#" class="flex items-center justify-between"
-                                                @click.prevent="isOpen = true">
-                                                <h4 :class="{ 'text-violet-400 font-medium': isOpen == true }">Lorem Ipsum
-                                                    ?</h4>
-                                                <svg :class="{ 'transform rotate-180': isOpen == true }"
-                                                    class="w-5 h-5 text-gray-500" fill="none"
-                                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    viewBox="0 0 24 24" stroke="currentColor">
-                                                    <path d="M19 9l-7 7-7-7"></path>
-                                                </svg>
-                                            </a>
-                                            <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
-                                                :class="{ 'text-white ': isOpen == true }">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                                    culpa qui officia deserunt mollit anim id est laborum.</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="item px-6 py-6" x-data="{ isOpen: false }">
-                                            <a href="#" class="flex items-center justify-between"
-                                                @click.prevent="isOpen = true">
-                                                <h4 :class="{ 'text-violet-400 font-medium': isOpen == true }">Lorem Ipsum
-                                                    ?</h4>
-                                                <svg :class="{ 'transform rotate-180': isOpen == true }"
-                                                    class="w-5 h-5 text-gray-500" fill="none"
-                                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    viewBox="0 0 24 24" stroke="currentColor">
-                                                    <path d="M19 9l-7 7-7-7"></path>
-                                                </svg>
-                                            </a>
-                                            <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
-                                                :class="{ 'text-white ': isOpen == true }">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                                    culpa qui officia deserunt mollit anim id est laborum.</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="item px-6 py-6" x-data="{ isOpen: false }">
-                                            <a href="#" class="flex items-center justify-between"
-                                                @click.prevent="isOpen = true">
-                                                <h4 :class="{ 'text-violet-400 font-medium': isOpen == true }">Lorem Ipsum
+                                                <h4 :class="{ 'text-violet-400 font-medium': isOpen == true }">Lorem
+                                                    Ipsum
                                                     ?</h4>
                                                 <svg :class="{ 'transform rotate-180': isOpen == true }"
                                                     class="w-5 h-5 text-gray-500" fill="none"
@@ -613,7 +544,58 @@
                                             <a href="#" class="flex items-center justify-between"
                                                 @click.prevent="isOpen = true">
                                                 <h4 :class="{ 'text-violet-400 font-medium': isOpen == true }">Lorem
-                                                    Ipsum ?</h4>
+                                                    Ipsum
+                                                    ?</h4>
+                                                <svg :class="{ 'transform rotate-180': isOpen == true }"
+                                                    class="w-5 h-5 text-gray-500" fill="none"
+                                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path d="M19 9l-7 7-7-7"></path>
+                                                </svg>
+                                            </a>
+                                            <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
+                                                :class="{ 'text-white ': isOpen == true }">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="item px-6 py-6" x-data="{ isOpen: false }">
+                                            <a href="#" class="flex items-center justify-between"
+                                                @click.prevent="isOpen = true">
+                                                <h4 :class="{ 'text-violet-400 font-medium': isOpen == true }">Lorem
+                                                    Ipsum
+                                                    ?</h4>
+                                                <svg :class="{ 'transform rotate-180': isOpen == true }"
+                                                    class="w-5 h-5 text-gray-500" fill="none"
+                                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path d="M19 9l-7 7-7-7"></path>
+                                                </svg>
+                                            </a>
+                                            <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
+                                                :class="{ 'text-white ': isOpen == true }">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="item px-6 py-6" x-data="{ isOpen: false }">
+                                            <a href="#" class="flex items-center justify-between"
+                                                @click.prevent="isOpen = true">
+                                                <h4 :class="{ 'text-violet-400 font-medium': isOpen == true }">Lorem
+                                                    Ipsum
+                                                    ?</h4>
                                                 <svg :class="{ 'transform rotate-180': isOpen == true }"
                                                     class="w-5 h-5 text-gray-500" fill="none"
                                                     stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -903,9 +885,39 @@
                                                 <h4 :class="{ 'text-violet-400 font-medium': isOpen == true }">Lorem
                                                     Ipsum ?</h4>
                                                 <svg :class="{ 'transform rotate-180': isOpen == true }"
+                                                    class="w-5 h-5 text-gray-500" fill="none"
+                                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path d="M19 9l-7 7-7-7"></path>
+                                                </svg>
+                                            </a>
+                                            <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
+                                                :class="{ 'text-white ': isOpen == true }">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="item px-6 py-6" x-data="{ isOpen: false }">
+                                            <a href="#" class="flex items-center justify-between"
+                                                @click.prevent="isOpen = true">
+                                                <h4 :class="{ 'text-violet-400 font-medium': isOpen == true }">Lorem
+                                                    Ipsum ?</h4>
+                                                <svg :class="{ 'transform rotate-180': isOpen == true }"
+<<<<<<< HEAD
                                                     class="w-5 h-5 text-gray-500 " fill="none"
                                                     stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                     viewBox="0 0 24 24" stroke="currentColor">
+=======
+                                                    class="w-5 h-5 text-white " fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                                                    stroke="currentColor">
+>>>>>>> 708042e00009fada2f901de6e7420dfc1c70d3b6
                                                     <path d="M19 9l-7 7-7-7"></path>
                                                 </svg>
                                             </a>
@@ -955,11 +967,16 @@
             </article>
 
 
-            </div>
 
 
         </section>
+<<<<<<< HEAD
         <div id="alpine-devtools" x-data="devtools()" x-show="alpines.length" x-init="start()"></div>
+=======
+    </div>
+    <div id="alpine-devtools" x-data="devtools()" x-show="alpines.length" x-init="start()">
+    </div>
+>>>>>>> 708042e00009fada2f901de6e7420dfc1c70d3b6
     </div>
     <div class="mt-8">
         <h2

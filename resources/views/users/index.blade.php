@@ -44,9 +44,9 @@
                 class=" menu absolute md:relative inset-0 md:block hidden z-40 bg-blue-950 md:bg-inherit py-24 transition-all duration-200">
                 <div
                     class="grid md:flex lg:text-xl text-lg place-items-center  py-10 md:py-0 md:space-y-0 md:space-x-12 text-center md:justify-between">
-                    <a href=""
+                    <a href="/index"
                         class="hover:underline hover:scale-x-110 hover:text-white transition-all ease-in-duration-200">Home</a>
-                    <a href=""
+                    <a href="/pricing"
                         class="hover:underline hover:scale-x-110 hover:text-white transition-all ease-in-duration-200">Pricing</a>
                     <a href=""
                         class="hover:underline hover:scale-x-110 hover:text-white transition-all ease-in-duration-200">How
@@ -177,7 +177,7 @@
             </div>
         </div>
     </section>
-    <section class="processus bg-blue-950 text-white mt-24 p-20 md:px-16 lg:px-28 text-center md:text-start">
+    <section class="processus bg-blue-950 text-white mt-24 p-10 sm:p-16 md:p-20 md:px-16 lg:px-28 text-center md:text-start">
         <div
             class="w-80 h-80 bg-gradient-to-r from-blue-600 to-purple-600 absolute top-auto right-0 blur-3xl opacity-30 overflow-hidden rounded-full">
         </div>

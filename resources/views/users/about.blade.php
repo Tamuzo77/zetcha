@@ -17,24 +17,41 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Document</title>
 </head>
-<body class="text-white filter brightness-50" style="background-image: url('image/Rectangle 2.png');">
-    <div class="md:p-32 p-20 sm:w-3/4 lg:w-2/4 m-auto">
-    <div class="flex items-center space-x-10 h-96">
-        <div class="w-1/2">
-            <h3 class="border-l-2">Our Services</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, nisi officia repellendus recusandae omnis eveniet totam vero, id rerum voluptates fugit numquam necessitatibus modi at aperiam illo delectus impedit. Inventore!</p>
-        </div>
-        <div class="w-1/2">
-            <h3>What we do</h3>
-            <div class="flex items-center space-x-10">
-                <i class="fa-solid fa-fax fa-2x"></i>
-               <div>
-                <h3>Creating</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem dolor eum aut voluptatibus quaerat blanditiis quibusdam quae excepturi expedita. Ad dolor adipisci incidunt illum, maxime quam a quod animi.</p>
-               </div>
+
+<body class="text-white text-lg sm:text-xl bg-blue-950 pb-40" {{-- style="background-image: url('image/Rectangle 2.png');" --}}>
+    <div class="w-full h-full md:h-screen {{-- bg-black --}} bg-opacity-70 pt-20">
+        <i class="fa-regular fa-circle w-20 h-20 md:w-40 md:h-40 fa-beat-fade text-violet-500 -z-10"></i>
+        <div class=" md:flex md:space-x-10 space-x-0 md:space-y-0 space-y-10 px-6 md:px-0  sm:w-4/5 lg:w-3/5 m-auto">
+            <div class="md:w-1/2">
+                <h3 class="border-l-4 text-3xl md:text-4xl p-5 border-s-blue-500 font-bold">Our Services</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, nisi officia repellendus recusandae
+                    omnis eveniet totam vero, id rerum voluptates fugit numquam necessitatibus modi at aperiam illo
+                    delectus impedit. Inventore!</p>
+                <button class="btn"><a href="">create your card</a></button>
+            </div>
+            <div class="md:w-1/2">
+                <h3 class="text-3xl md:text-4xl text-blue-500 p-5">What we do</h3>
+                <div class="flex items-center space-x-10">
+                    <i class="fa-solid fa-fax fa-2x text-blue-500"></i>
+                    <div class="mb-5">
+                        <h3 class="text-2xl md:text-3xl mb-2">Creating</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem dolor eum aut
+                            voluptatibus quaerat blanditiis quibusdam quae excepturi expedita. Ad dolor adipisci
+                            incidunt illum, maxime quam a quod animi.</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-10">
+                    <i class="fa-solid fa-fax fa-2x text-blue-500"></i>
+                    <div class="mb-5">
+                        <h3 class="text-2xl md:text-3xl mb-2">Creating</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem dolor eum aut
+                            voluptatibus quaerat blanditiis quibusdam quae excepturi expedita. Ad dolor adipisci
+                            incidunt illum, maxime quam a quod animi.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </body>
+
 </html>

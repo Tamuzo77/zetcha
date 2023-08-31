@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UseController;
 use Illuminate\Support\Facades\Artisan;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\AboutController;
@@ -21,14 +22,12 @@ use App\Http\Controllers\InscriptionController;
 */
 // -------------------------frontend---------------------------------------
 Route::get( '/index', [IndexController::class, 'index']);
-<<<<<<< HEAD
 Route::get( '/pricing', [PricingController::class,'pricing']);
 Route::get( '/inscription', [InscriptionController::class,'inscription']);
 Route::get( '/page', [PageController::class,'page']);
 Route::get( '/about', [AboutController::class,'about']);
-=======
+Route::get( 'use', [UseController::class,'use']);
 Route::get( '/pricingtest', [PricingController::class,'pricing']);
->>>>>>> 708042e00009fada2f901de6e7420dfc1c70d3b6
 //----------------------------------------------------------------
 
 Route::get('/', function () {

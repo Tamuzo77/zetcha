@@ -909,15 +909,9 @@
                                                 <h4 :class="{ 'text-violet-400 font-medium': isOpen == true }">Lorem
                                                     Ipsum ?</h4>
                                                 <svg :class="{ 'transform rotate-180': isOpen == true }"
-<<<<<<< HEAD
-                                                    class="w-5 h-5 text-gray-500 " fill="none"
-                                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    viewBox="0 0 24 24" stroke="currentColor">
-=======
-                                                    class="w-5 h-5 text-white " fill="none" stroke-linecap="round"
+                                                    class="w-5 h-5 text-gray-500 " fill="none" stroke-linecap="round"
                                                     stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
                                                     stroke="currentColor">
->>>>>>> 708042e00009fada2f901de6e7420dfc1c70d3b6
                                                     <path d="M19 9l-7 7-7-7"></path>
                                                 </svg>
                                             </a>
@@ -970,13 +964,7 @@
 
 
         </section>
-<<<<<<< HEAD
         <div id="alpine-devtools" x-data="devtools()" x-show="alpines.length" x-init="start()"></div>
-=======
-    </div>
-    <div id="alpine-devtools" x-data="devtools()" x-show="alpines.length" x-init="start()">
-    </div>
->>>>>>> 708042e00009fada2f901de6e7420dfc1c70d3b6
     </div>
     <div class="mt-8">
         <h2

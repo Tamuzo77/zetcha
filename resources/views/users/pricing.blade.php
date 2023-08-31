@@ -33,9 +33,9 @@
                     class=" menu absolute md:relative inset-0 md:block hidden z-40 bg-blue-950 md:bg-inherit py-24 transition-all duration-200">
                     <div
                         class="grid md:flex lg:text-xl text-lg place-items-center  py-10 md:py-0 md:space-y-0 md:space-x-12 text-center md:justify-between">
-                        <a href=""
+                        <a href="/index"
                             class="hover:underline hover:scale-x-110 hover:text-white transition-all ease-in-duration-200">Home</a>
-                        <a href=""
+                        <a href="/pricing"
                             class="hover:underline hover:scale-x-110 hover:text-white transition-all ease-in-duration-200">Pricing</a>
                         <a href=""
                             class="hover:underline hover:scale-x-110 hover:text-white transition-all ease-in-duration-200">How
@@ -114,7 +114,7 @@
                         <p class="text-3xl md:text-5xl">700 fcfa</p>
                         <button
                             class="text-blue-950 bg-white w-full transition-all duration-100 hover:bordure hover:bg-inherit hover:text-white "><a
-                                href="">Lancez-vous</a></button>
+                                href="/inscription">Lancez-vous</a></button>
                         <ul class=" space-y-5 opacity-95">
                             <div class="flex items-center">
                                 <svg viewBox="0 0 32 32" fill="none" class="h-8 w-8 flex-none">
@@ -909,7 +909,7 @@
                                                 <h4 :class="{ 'text-violet-400 font-medium': isOpen == true }">Lorem
                                                     Ipsum ?</h4>
                                                 <svg :class="{ 'transform rotate-180': isOpen == true }"
-                                                    class="w-5 h-5 text-white " fill="none" stroke-linecap="round"
+                                                    class="w-5 h-5 text-gray-500 " fill="none" stroke-linecap="round"
                                                     stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
                                                     stroke="currentColor">
                                                     <path d="M19 9l-7 7-7-7"></path>
@@ -964,10 +964,19 @@
 
 
         </section>
+        <div id="alpine-devtools" x-data="devtools()" x-show="alpines.length" x-init="start()"></div>
     </div>
-    <div id="alpine-devtools" x-data="devtools()" x-show="alpines.length" x-init="start()">
-    </div>
-    </div>
+    <div class="mt-8">
+        <h2
+          class=" mb-4 text-2xl font-bold text-center text-gray-800 lg:text-3xl md:mb-6">
+          Get in touch
+        </h2>
+
+        <p class="max-w-screen-md mx-auto text-center text-gray-500 md:text-lg">
+          Please fill in the details below so that we can get in contact with you.
+        </p>
+      </div>
+
     <footer class=" text-blue-950 mt-20">
         <div class="text-center m-auto w-1/2 mb-24">
             <h1 class="title text-2xl md:text-5xl capitalize mb-10">Prêt à booster votre networking ? Rejoignez ZETCHA
@@ -1010,6 +1019,7 @@
         })
         AOS.init();
     </script>
+
 </body>
 
 </html>

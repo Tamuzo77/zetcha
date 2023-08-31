@@ -14,4 +14,10 @@
     .btn {
         @apply p-3 rounded-sm mt-5 hover:text-blue-950 hover:bg-blue-200 transition-all duration-300 border-l-blue-500 border-b-indigo-400 border-r-violet-500 border-t-indigo-400 border-solid border-2;
     }
+    .input{
+        @apply w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:drop-shadow-md;
+    }
+    .label{
+        @apply block mb-2 text-sm font-bold text-gray-700;
+    }
 }

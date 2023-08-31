@@ -16,7 +16,6 @@ export const theme = {
           listStyleImage: {
             checkmark: 'url("/img/checkmark.png")',
           },
-
     },
 };
 export const plugins = [];

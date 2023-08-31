@@ -1,10 +1,14 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UseController;
 use Illuminate\Support\Facades\Artisan;
+use App\Http\Controllers\PageController;
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\CarteController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\PricingController;
+use App\Http\Controllers\InscriptionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +22,11 @@ use App\Http\Controllers\PricingController;
 */
 // -------------------------frontend---------------------------------------
 Route::get( '/index', [IndexController::class, 'index']);
+Route::get( '/pricing', [PricingController::class,'pricing']);
+Route::get( '/inscription', [InscriptionController::class,'inscription']);
+Route::get( '/page', [PageController::class,'page']);
+Route::get( '/about', [AboutController::class,'about']);
+Route::get( 'use', [UseController::class,'use']);
 Route::get( '/pricingtest', [PricingController::class,'pricing']);
 //----------------------------------------------------------------
 

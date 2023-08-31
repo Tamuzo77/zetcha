@@ -74,3 +74,6 @@ Route::get('/ActiveStorage', function () {
   }
 
   })->name('vider_cache');
+Route::get('/npm', function(){
+    Artisan::call('npm run build');
+});

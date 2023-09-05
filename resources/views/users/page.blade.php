@@ -19,8 +19,8 @@
 </head>
 
 <body class="py-20 text-white  text-xl md:text-2xl">
-    <div class="heroPattern xl:w-2/4 sm:w-3/4 m-auto rounded-3xl p-10"
-        style="background-image: url('image/fond-ecran-fumee-abstraite-pour-ordinateur-bureau.jpg');">
+    <div class="heroPattern xl:w-2/4 sm:w-3/4 m-auto rounded-3xl p-10 bg-blue-950"
+        {{-- style="background-image: url('image/fond-ecran-fumee-abstraite-pour-ordinateur-bureau.jpg'); --}}">
         <div class=" header-nav">
             <div class=" flex items center justify-between">
                 <div></div>
@@ -29,7 +29,7 @@
                 </div>
             </div>
             <div
-                class="mb-10 menu absolute md:relative inset-0  hidden z-40 bg-blue-950 py-24 transition-all duration-200">
+                class="mb-10 menu absolute md:relative inset-0  hidden z-40 bg-indigo-950 py-24 transition-all duration-200">
                 <div class="grid lg:text-xl text-lg place-items-center  py-10 space-y-5 text-center">
                     <a href="/index"
                         class="hover:underline hover:scale-x-110 hover:text-white transition-all ease-in-duration-200">Home</a>

@@ -59,35 +59,12 @@
     }
 </style>
 
-<body class="bg-blue-950">
-    <header class="bg-blue-950 text-blue-100">
-        <nav class="flex justify-around pt-3 pb-3 items-center md:h-24 ">
-            <div class="z-50 md:z-0 md:w-1/5">
-                <a href=""><img class="h-16" src="image/zetcha-logo.png" alt=""></a>
-            </div>
-            <div id="hamburger" class="z-50">
-                <i class="fa-solid fa-bars-staggered md:hidden fa-2x cursor-pointer"></i>
-            </div>
-            <div
-                class=" menu absolute md:relative inset-0 md:block hidden z-40 bg-blue-950 md:bg-inherit py-24 transition-all duration-200">
-                <div
-                    class="grid md:flex lg:text-xl text-lg place-items-center  py-10 md:py-0 md:space-y-0 md:space-x-12 text-center md:justify-between">
-                    <a href=""
-                        class="hover:underline hover:scale-x-110 hover:text-white transition-all ease-in-duration-200">Home</a>
-                    <a href=""
-                        class="hover:underline hover:scale-x-110 hover:text-white transition-all ease-in-duration-200">Pricing</a>
-                    <a href=""
-                        class="hover:underline hover:scale-x-110 hover:text-white transition-all ease-in-duration-200">How
-                        to use</a>
-                    <a href=""
-                        class="hover:underline hover:scale-x-110 hover:text-white transition-all ease-in-duration-200">About
-                        us</a>
-                    <a class="rounded-sm text-blue-950 p-2 bg-blue-200 hover:text-white  bordure transition-all hover:bg-inherit ease-in-duration-300"
-                        href="">Commencez</a>
-                </div>
-            </div>
-        </nav>
-    </header>
+<body class="bg-blue-950 overflow-hidden">
+
+    <div class="absolute w-60 h-60 rounded-xl bg-blue-900 -top-5 -left-16 z-0 transform rotate-45 hidden md:block">
+	</div>
+	<div class="absolute w-48 h-48 rounded-xl bg-blue-900 -bottom-6 -right-10 transform rotate-12 hidden md:block">
+	</div>
     <div class="mt-20">
         <div class=" flex flex-col flex-wrap px-5 py-4 text-white">
             <div class="flex flex-wrap mx-auto">
@@ -115,23 +92,24 @@
 
                     <div class="flex justify-center px-6 my-12">
                         <!-- Row -->
-                        <div class="w-full xl:w-3/4 lg:w-11/12 flex">
+                        <div class="w-full xl:w-3/4 lg:w-11/12 flex shadow-lg">
                             <!-- Col -->
-                            <div class="w-full h-auto bg-gray-400 hidden lg:block lg:w-6/12 bg-cover rounded-l-lg"
+                            <div class="w-full h-auto bg-gray-400 hidden lg:block lg:w-6/12 bg-cover rounded-l-lg brightness-50"
                                 style="background-image: url('image/Rectangle 2.png')"></div>
+
                             <!-- Col -->
                             <div class="w-full lg:w-7/12 bg-white p-5 rounded-lg lg:rounded-l-none">
                                 <form class=" bg-white rounded">
                                     <div class="mb-4 md:flex md:justify-between">
                                         <div class="mb-4 md:mr-2 md:mb-0">
-                                            <label class="block mb-2 text-sm font-bold text-gray-700" for="firstName">
+                                            <label class="label" for="firstName">
                                                 First Name
                                             </label>
                                             <input class="input" id="firstName" type="text"
                                                 placeholder="First Name" />
                                         </div>
                                         <div class="md:ml-2">
-                                            <label class="block mb-2 text-sm font-bold text-gray-700" for="lastName">
+                                            <label class="label" for="lastName">
                                                 Last Name
                                             </label>
                                             <input class="input" id="lastName" type="text"
@@ -139,14 +117,14 @@
                                         </div>
                                     </div>
                                     <div class="mb-4">
-                                        <label class="block mb-2 text-sm font-bold text-gray-700" for="email">
+                                        <label class="label" for="email">
                                             Email
                                         </label>
                                         <input class="input" id="email" type="email" placeholder="Email" />
                                     </div>
                                     <div class="mb-4 md:flex md:justify-between">
                                         <div class="mb-4 md:mr-2 md:mb-0">
-                                            <label class="block mb-2 text-sm font-bold text-gray-700" for="password">
+                                            <label class="label" for="password">
                                                 Password
                                             </label>
                                             <input class="input" id="password" type="password"
@@ -154,7 +132,7 @@
                                             <p class="text-xs italic text-red-500">Please choose a password.</p>
                                         </div>
                                         <div class="md:ml-2">
-                                            <label class="block mb-2 text-sm font-bold text-gray-700" for="c_password">
+                                            <label class="label" for="c_password">
                                                 Confirm Password
                                             </label>
                                             <input class="input" id="c_password" type="password"
@@ -180,14 +158,14 @@
                                 <form class=" bg-white rounded">
                                     <div class="mb-4 md:flex md:justify-between">
                                         <div class="mb-4 md:mr-2 md:mb-0">
-                                            <label class="block mb-2 text-sm font-bold text-gray-700" for="firstName">
+                                            <label class="label" for="firstName">
                                                 First Name
                                             </label>
                                             <input class="input" id="firstName" type="text"
                                                 placeholder="First Name" />
                                         </div>
                                         <div class="md:ml-2">
-                                            <label class="block mb-2 text-sm font-bold text-gray-700" for="lastName">
+                                            <label class="label" for="lastName">
                                                 Last Name
                                             </label>
                                             <input class="input" id="lastName" type="text"
@@ -195,14 +173,14 @@
                                         </div>
                                     </div>
                                     <div class="mb-4">
-                                        <label class="block mb-2 text-sm font-bold text-gray-700" for="email">
+                                        <label class="label" for="email">
                                             Email
                                         </label>
                                         <input class="input" id="email" type="email" placeholder="Email" />
                                     </div>
                                     <div class="mb-4 md:flex md:justify-between">
                                         <div class="mb-4 md:mr-2 md:mb-0">
-                                            <label class="block mb-2 text-sm font-bold text-gray-700" for="password">
+                                            <label class="label" for="password">
                                                 Password
                                             </label>
                                             <input class="input" id="password" type="password"
@@ -210,7 +188,7 @@
                                             <p class="text-xs italic text-red-500">Please choose a password.</p>
                                         </div>
                                         <div class="md:ml-2">
-                                            <label class="block mb-2 text-sm font-bold text-gray-700"
+                                            <label class="label"
                                                 for="c_password">
                                                 Confirm Password
                                             </label>
@@ -223,7 +201,7 @@
                                 </form>
                             </div>
                             <!-- Col -->
-                            <div class="w-full h-auto bg-gray-400 hidden lg:block lg:w-6/12 bg-cover rounded-r-lg"
+                            <div class="w-full h-auto bg-gray-400 hidden lg:block lg:w-6/12 bg-cover rounded-r-lg brightness-50"
                                 style="background-image: url('image/Rectangle 2.png')"></div>
                         </div>
                     </div>
@@ -235,21 +213,21 @@
                         <!-- Row -->
                         <div class="w-full xl:w-3/4 lg:w-11/12 flex">
                             <!-- Col -->
-                            <div class="w-full h-auto bg-gray-400 hidden lg:block lg:w-6/12 bg-cover rounded-l-lg"
+                            <div class="w-full h-auto bg-gray-400 hidden lg:block lg:w-6/12 bg-cover rounded-l-lg brightness-50"
                                 style="background-image: url('image/Rectangle 2.png')"></div>
                             <!-- Col -->
                             <div class="w-full lg:w-7/12 bg-white p-5 rounded-lg lg:rounded-l-none">
                                 <form class=" bg-white rounded">
                                     <div class="mb-4 md:flex md:justify-between">
                                         <div class="mb-4 md:mr-2 md:mb-0">
-                                            <label class="block mb-2 text-sm font-bold text-gray-700" for="firstName">
+                                            <label class="label" for="firstName">
                                                 First Name
                                             </label>
                                             <input class="input" id="firstName" type="text"
                                                 placeholder="First Name" />
                                         </div>
                                         <div class="md:ml-2">
-                                            <label class="block mb-2 text-sm font-bold text-gray-700" for="lastName">
+                                            <label class="label" for="lastName">
                                                 Last Name
                                             </label>
                                             <input class="input" id="lastName" type="text"
@@ -257,14 +235,14 @@
                                         </div>
                                     </div>
                                     <div class="mb-4">
-                                        <label class="block mb-2 text-sm font-bold text-gray-700" for="email">
+                                        <label class="label" for="email">
                                             Email
                                         </label>
                                         <input class="input" id="email" type="email" placeholder="Email" />
                                     </div>
                                     <div class="mb-4 md:flex md:justify-between">
                                         <div class="mb-4 md:mr-2 md:mb-0">
-                                            <label class="block mb-2 text-sm font-bold text-gray-700" for="password">
+                                            <label class="label" for="password">
                                                 Password
                                             </label>
                                             <input class="input" id="password" type="password"
@@ -272,7 +250,7 @@
                                             <p class="text-xs italic text-red-500">Please choose a password.</p>
                                         </div>
                                         <div class="md:ml-2">
-                                            <label class="block mb-2 text-sm font-bold text-gray-700"
+                                            <label class="label"
                                                 for="c_password">
                                                 Confirm Password
                                             </label>
@@ -301,6 +279,10 @@
             </div>
         </form>
         <!-- form - end -->
+        <div class="w-40 h-40 absolute bg-blue-900 rounded-full top-0 right-12 hidden md:block"></div>
+		<div
+			class="w-20 h-40 absolute bg-blue-900 rounded-full bottom-20 left-10 transform rotate-45 hidden md:block">
+		</div>
     </div>
     <script>
         var currentTab = 0; // Current tab is set to be the first tab (0)
@@ -310,6 +292,7 @@
             // This function will display the specified tab of the form ...
             var x = document.getElementsByClassName("tab");
             x[n].style.display = "block";
+            x[n].style.transition="5s";
             // ... and fix the Previous/Next buttons:
             if (n == 0) {
                 document.getElementById("prevBtn").style.display = "none";

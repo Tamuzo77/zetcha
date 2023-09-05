@@ -94,7 +94,7 @@
                         <!-- Row -->
                         <div class="w-full xl:w-3/4 lg:w-11/12 flex shadow-lg">
                             <!-- Col -->
-                            <div class="w-full h-auto bg-gray-400 hidden lg:block lg:w-6/12 bg-cover rounded-l-lg brightness-75"
+                            <div class="w-full h-auto bg-gray-400 hidden lg:block lg:w-6/12 bg-cover rounded-l-lg brightness-50"
                                 style="background-image: url('image/Rectangle 2.png')"></div>
 
                             <!-- Col -->
@@ -201,7 +201,7 @@
                                 </form>
                             </div>
                             <!-- Col -->
-                            <div class="w-full h-auto bg-gray-400 hidden lg:block lg:w-6/12 bg-cover rounded-r-lg brightness-75"
+                            <div class="w-full h-auto bg-gray-400 hidden lg:block lg:w-6/12 bg-cover rounded-r-lg brightness-50"
                                 style="background-image: url('image/Rectangle 2.png')"></div>
                         </div>
                     </div>
@@ -213,7 +213,7 @@
                         <!-- Row -->
                         <div class="w-full xl:w-3/4 lg:w-11/12 flex">
                             <!-- Col -->
-                            <div class="w-full h-auto bg-gray-400 hidden lg:block lg:w-6/12 bg-cover rounded-l-lg brightness-75"
+                            <div class="w-full h-auto bg-gray-400 hidden lg:block lg:w-6/12 bg-cover rounded-l-lg brightness-50"
                                 style="background-image: url('image/Rectangle 2.png')"></div>
                             <!-- Col -->
                             <div class="w-full lg:w-7/12 bg-white p-5 rounded-lg lg:rounded-l-none">

@@ -17,26 +17,25 @@
                                 </div>
                                 <div class="md:w-2/3 py-12 ">
                                     <div class="p-4">
-                                        @forelse ($faqs as $faq )
-                                            
-                                        <div class="item px-6 py-6" x-data="{ isOpen: false }">
-                                            <a href="#" class="flex items-center justify-between"
-                                                @click.prevent="isOpen = true">
-                                                <h4 :class="{ 'text-violet-400 font-medium': isOpen == true }">{{ $faq->question }}</h4>
-                                                <svg :class="{ 'transform rotate-180': isOpen == true }"
-                                                    class="w-5 h-5 text-gray-500" fill="none" stroke-linecap="round"
-                                                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path d="M19 9l-7 7-7-7"></path>
-                                                </svg>
-                                            </a>
-                                            <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
-                                                :class="{ 'text-white ': isOpen == true }">
-                                                <p>{{$faq->answer}}</p>
+                                        @forelse ($faqs as $faq)
+                                            <div class="item px-6 py-6" x-data="{ isOpen: false }">
+                                                <a href="#" class="flex items-center justify-between"
+                                                    @click.prevent="isOpen = true">
+                                                    <h4 :class="{ 'text-violet-400 font-medium': isOpen == true }">
+                                                        {{ $faq->question }}</h4>
+                                                    <svg :class="{ 'transform rotate-180': isOpen == true }"
+                                                        class="w-5 h-5 text-gray-500" fill="none"
+                                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                        viewBox="0 0 24 24" stroke="currentColor">
+                                                        <path d="M19 9l-7 7-7-7"></path>
+                                                    </svg>
+                                                </a>
+                                                <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
+                                                    :class="{ 'text-white ': isOpen == true }">
+                                                    <p>{{ $faq->answer }}</p>
+                                                </div>
                                             </div>
-                                        </div>
                                         @empty
-                                            
                                         @endforelse
                                     </div>
 

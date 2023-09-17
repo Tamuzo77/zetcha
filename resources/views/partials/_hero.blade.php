@@ -13,7 +13,7 @@
                     incontournable pour partager vos informations professionnelles facilement. Fini les cartes de visite
                     papier que l'on perd ou que l'on oublie. Avec ZETCHA, créez votre carte de visite digitale en un
                     clin d'œil et partagez-la instantanément.</p>
-                <button class="btn"><a href="">Créer votre carte</a></button>
+                <button onclick="startModal.showModal()" class="btn">Créer votre carte</button>
             </div>
             <div class="md:w-1/2" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
                 data-aos-duration="1500">

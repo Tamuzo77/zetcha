@@ -3,7 +3,7 @@
             <h1 class="title text-2xl mb-5 md:text-5xl text-center capitalize"><span class="uppercase">ZETCHA</span> :
                 La puissance
                 de la simplicité</h1>
-            <p class="text-center">Notre approche simplifiée vous permet de gérer votre image professionnelle en toute
+            <p class="text-center ">Notre approche simplifiée vous permet de gérer votre image professionnelle en toute
                 simplicité, sans tracas inutiles. Avec ZETCHA, profitez d'une expérience utilisateur sans pareille et
                 faites forte impression en quelques clics seuleme</p>
         </div>
@@ -19,7 +19,7 @@
                     </div>
                     <div class="flex items-center justify-between">
                         <button class="h-9 w-9 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600"></button>
-                        <a href="" class="">Commencer > </a>
+                        <a href="{{ route('pricing') }}" class="">Commencer > </a>
                     </div>
                 </div>
                 <div
@@ -32,7 +32,7 @@
                     </div>
                     <div class="flex items-center justify-between">
                         <button class="h-10 w-10 rounded-lg bg-green-400"></button>
-                        <a href="" class="">Commencer > </a>
+                        <a href="{{ route('pricing') }}" class="">Commencer > </a>
                     </div>
                 </div>
                 <div
@@ -45,7 +45,7 @@
                     </div>
                     <div class="flex items-center justify-between ">
                         <button class="h-10 w-10 rounded-lg bg-red-500"></button>
-                        <a href="" class="">Commencer > </a>
+                        <a href="{{ route('pricing') }}" class="">Commencer > </a>
                     </div>
                 </div>
                 <div
@@ -58,7 +58,7 @@
                     </div>
                     <div class="flex items-center justify-between ">
                         <button class="h-10 w-10 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600"></button>
-                        <a href="" class="">Commencer > </a>
+                        <a href="{{ route('pricing') }}" class="">Commencer > </a>
                     </div>
                 </div>
             </div>

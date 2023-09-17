@@ -3,11 +3,13 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UseController;
 use Illuminate\Support\Facades\Artisan;
+use App\Http\Controllers\MainController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\CarteController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\PricingController;
+use App\Http\Controllers\PaiementController;
 use App\Http\Controllers\InscriptionController;
 
 /*
@@ -22,7 +24,6 @@ use App\Http\Controllers\InscriptionController;
 */
 // -------------------------frontend---------------------------------------
 Route::get( '/index', [IndexController::class, 'index']);
-Route::get( '/pricing', [PricingController::class,'pricing']);
 Route::get( '/inscription', [InscriptionController::class,'inscription']);
 Route::get( '/page', [PageController::class,'page']);
 Route::get( '/about', [AboutController::class,'about']);
@@ -30,12 +31,20 @@ Route::get( 'use', [UseController::class,'use']);
 Route::get( '/pricingtest', [PricingController::class,'pricing']);
 //----------------------------------------------------------------
 
-Route::get('/', function () {
-    return view('index');
-});
-Route::get('/pricing', function () {
-    return view('pricing');
-})->name('pricing');
+Route::get('/', [MainController::class, 'index'])->name('home');
+
+Route::get('pricing', [MainController::class, 'pricing'])->name('pricing');
+
+Route::get('about', [MainController::class, 'about'])->name('about');
+
+Route::get('how-to-use', [MainController::class, 'use'])->name('how-to-use');
+
+Route::get('carteZ-create', [CarteController::class, 'create'])->name('createCarteZ');
+Route::post('carteZ-store', [CarteController::class, 'store'])->name('storeCarteZ');
+
+Route::get('paiement-carteZ/{id}', [PaiementController::class, 'handle'])->name('paiements.handle');
+Route::get('paiement-carteZ-validate/{carteId}', [PaiementController::class, 'validatePaiement'])->name('paiements.validatePaiement');
+
 Route::post('/updateCarte', [CarteController::class, 'requestToUpdate'])->name('updateCarte');
 Route::get('/test', function () {
     return view('test/testCarte');

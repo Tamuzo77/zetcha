@@ -31,4 +31,10 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'kkiapay' => [
+        'private_key' => env('KKIAPAY_PRIVATE_KEY'),
+        'public_key' => env('KKIAPAY_PUBLIC_KEY'),
+        'secret' => env('KKIAPAY_SECRET')
+    ]
+
 ];

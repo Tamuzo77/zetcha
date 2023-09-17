@@ -5,7 +5,7 @@
             <p class="mb-10">Que vous soyez étudiant, professionnel en herbe ou expert confirmé, ZETCHA est là pour
                 vous aider à vous connecter et à réussir dans votre domaine. Laissez votre carte de visite digitale
                 parler pour vous !</p>
-            <button class="bg-blue-950 text-white p-3">Créer Votre Carte</button>
+            <button onclick="startModal.showModal()" class="bg-blue-950 text-white mb-2 p-3">Créer Votre Carte</button>
         </div>
         <div
             class="mb-10 sm:px-20 flex lg:text-xl text-lg place-items-center lg:w-1/2 lg:float-right py-10 md:py-0 md:space-y-0 text-center justify-around">

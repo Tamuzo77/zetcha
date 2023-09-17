@@ -3,7 +3,7 @@
     @foreach ($pricings as $pricing)
         <div
             class="bg-blue-950 rounded-2xl p-10 space-y-10 shadow-lg shadow-blue-950 hover:scale-95 transition-all duration-200 bordure">
-            <h1 class="text-xl md:text-3xl title w-24">{{ $pricing->name }}</h1>
+            <h1 class="text-xl md:text-3xl title w-auto">{{ $pricing->name }}</h1>
             @if ($loop->iteration == 1)
                 <p class="opacity-95">Conçu pour ceux qui cherchent une solution simple et efficace pour leur
                     carte
@@ -18,9 +18,11 @@
                 </p>
             @endif
             <p class="text-3xl md:text-5xl">{{ $pricing->price }} FCFA</p>
-            <button
-                class="text-blue-950 py-4 rounded-xl bg-white w-full transition-all duration-100 hover:bordure hover:bg-inherit hover:text-white "><a
-                    href="">Lancez-vous</a></button>
+            <form action="{{ route('createCarteZ') }}" method="GET">
+                <button name="planTarifaire_id" value="{{ $pricing->id }}"
+                    class="text-blue-950 py-4 rounded-xl bg-white w-full transition-all duration-100 hover:bordure hover:bg-inherit hover:text-white ">Lancez-vous</button>
+
+            </form>
             <ul class=" space-y-5 opacity-95">
                 @foreach ($pricing->fonctionnalites as $fonctionnalite)
                     <div class="flex items-center">

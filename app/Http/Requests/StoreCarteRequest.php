@@ -22,12 +22,14 @@ class StoreCarteRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'author_id' => 'required|exists:authors,id',
-            'numeroZ' => 'required|unique:cartes,numeroZ',
-            'last_name' => 'required|max:255',
-            'first_name' => 'required|max:1025',
-            'planTarifaire_id' => 'required|exists:plan_tarifaires,id',
-            'infosProfessionelles' => ''
+            'enterprise_name' => 'max:1025',
+            'enterprise_address' => 'max:1025',
+            'mail' => 'email',
+            'phone_number1' => '',
+            'phone_number2' => '',
+            'lien_facebook' => 'url',
+            'lien_twitter' => 'url',
+            'lien_linkedin' => 'url',
         ];
     }
 }
